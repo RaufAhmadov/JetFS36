@@ -7,47 +7,78 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+body{
+}
+
 .wrapper {
     display: flex;
-    align-items: center;
-    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
     height: auto;
 }
 
-.card_chip {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 315px;
-    height: auto;
+.card{
+    width: 330px;
+    height: 200px;
     background-color: #8E44AD;
     margin: 10px;
     border-radius: 10px;
+    padding-left: 15px;
+}
+
+.card_chip{
+    margin: 35px 0 0 -5px;
 }
 
 .card_chip img{
-    max-width: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 35px 0 0 -5px;
 }
 
 
-.card_chip p , .card_visa p{
+.card_name{
     color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
 }
 
+.card_number{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 200;
+}
 
-.number {
+.card_content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
-.name {
+
+.card_info{
+    text-align: center;
+    vertical-align: bottom;
 }
-.card_visa {
+
+.card_info_valid{
+    font-size: 9px;
+    color: #fff;
+    font-family: 'Tahoma', sans-serif;
+
+}
+
+.card_info_date{
+    color: #fff;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.card_visa{
+
 }
 
 .card_visa img{
-    max-width: 100px;
+    width: 100px;
     height: 35px;
-}
-
-.valid_date {
-}
-.date {
+    margin-right: 18px;
 }

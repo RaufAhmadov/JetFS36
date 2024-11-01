@@ -13,17 +13,35 @@ body{
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
+    justify-content: center; /* Центрирует карточки по горизонтали */
+    align-items: center; /* Центрирует карточки по вертикали в случае необходимости */
+    max-width: 700px; /* Ограничивает ширину контейнера для перехода в два ряда */
+    margin: 0 auto; /* Центрирует весь контейнер на странице */
 }
 
 .card{
+    flex: 1 1 45%;
     width: 330px;
     height: 200px;
-    background-color: #8E44AD;
     margin: 10px;
     border-radius: 10px;
     padding-left: 15px;
+}
+
+.card:nth-child(1){
+    background-color: #8E44AD;
+}
+
+.card:nth-child(2){
+    background-color: #009432;
+}
+
+.card:nth-child(3){
+    background-color: #0652DD;
+}
+
+.card:nth-child(4){
+    background-color: #161617;
 }
 
 .card_chip{

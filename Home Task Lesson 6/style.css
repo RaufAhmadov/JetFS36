@@ -143,7 +143,6 @@ footer p{
 }
 
 .top_arrow:hover{
-    color: teal;
-    font-size: 3rem;
+    box-shadow: 1px 1px 5px teal;
     transition: all 0.5s ease-in-out;
 }

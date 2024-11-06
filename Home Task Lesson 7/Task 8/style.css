@@ -31,6 +31,7 @@ main{
 
 .wrapper{
     position: relative;
+    height: auto;
 }
 
 .text_area{
@@ -38,6 +39,7 @@ main{
     width: 27%;
     top: 50%;
     right: 55%;
+    transform: translateY(80%);
 }
 
 main h5{
@@ -124,11 +126,19 @@ main h1{
 
 .social{
     position: fixed;
-    right: 3%;
-    bottom: 50%;
+    right: 1%;
+    bottom: 45%;
     z-index: 9;
+}
+
+.social ul{
     list-style-type: none;
     color: #fff;
 }
 .social ul li{
+    margin: 15px;
+}
+.social ul li img{
+    width: 50%;
+    height: 50%;
 }

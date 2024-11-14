@@ -1,63 +1,90 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #543368;
 }
 
 .wrapper{
-    margin: 0 auto;
-    max-width: 80%;
-    margin-top: 20px;
+
 }
 
-.head_text{
-    background-color: #333;
-    padding: 20px;
+.head{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.head_h1{
+    font-size: 90px;
+    font-weight: 400;
     color: #fff;
-
 }
 
-.block_ul{
-    background-color: #666;
-    padding: 20px;
-    margin-top: 20px;
+.head_h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.section{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.choise{
+    display: inline-block;
+    text-align: center;
+    margin-right: 50px;
+    width: 160px;
+    height: 220px;
+    vertical-align: top;
+}
+
+.image{
+    position: relative;
+    background-color: #3b1950;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px auto;
+}
+
+.image > img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, 50%);
+}
+
+.down_btn{
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #764993;
+    display: block;
+    cursor: pointer;
+    width: 160px;
+    height: 35px;
+}
+
+.links{
+    display: block;
+    text-align: left;
+}
+
+.link{
+    margin-top: 5px;
     color: #fff;
     text-decoration: underline;
-    font-size: 18px;
-    font-weight: 400;
 }
 
-.about{
-    border: solid 4px black;
-    background-color: #999;
-    color: #fff;
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.content{
-    margin: 20px auto;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 10px;
-}
-
-
-.service_list{
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.footer{
-    background-color: #333;
-    padding: 30px 30px;
-    margin-top: 20px;
-}
-
-.footer_text{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
+.link_img{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    vertical-align: bottom;
 }

@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+.head_text{
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+
+}
+
+.block_ul{
+    background-color: #666;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about{
+    border: solid 4px black;
+    background-color: #999;
+    color: #fff;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.content{
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+
+.service_list{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: #333;
+    padding: 30px 30px;
+    margin-top: 20px;
+}
+
+.footer_text{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}

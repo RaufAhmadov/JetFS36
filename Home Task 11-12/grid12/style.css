@@ -4,22 +4,150 @@
     box-sizing: border-box;
 }
 
-.wrapper , .content {
-    width: 100vw;
+body{
+    background-color: #2596be;
+}
+
+p{
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+
+}
+
+
+
+.firs_line , .second_line, .third_line, .fourth_line{
+    display: grid;
+    text-align: center;
+}
+/*
+.firs_line div, .second_line div, .third_line div, .fourth_line div {
+    display: grid; 
+    place-items: center;
+    height: 100%; 
+    text-align: center; 
+    border: 2px solid #fff;
+}*/
+
+
+.wrapper{
+    display: grid;
+    justify-items: center;
+    width: 100%;
     height: auto;
 }
-.container {
-    
+
+.text_line{
+    width: 70%;
+    height: auto;
+    padding: 20px;
 }
+
+.content {
+    display: grid;
+    margin: 20px auto;
+    width: 70%;
+    height: auto;
+    grid-template-rows: repeat(4, 120px);
+    background-color: #60beda;
+    border: 2px solid #fff;
+
+}
+
+
+/** FIRST LINE START **/
+
 .firs_line {
-
+    grid-template-columns: repeat(3, auto);
 }
+
+.firs_line p {
+    text-align: center;
+}
+
+.firs_line_1{
+    background-color: darkcyan;
+}
+
+
+.firs_line_2{
+    background-color: greenyellow;
+}
+
+
+.firs_line_3{
+    background-color: purple;
+}
+
+/** FIRST LINE END**/
+
+
+
+
+/** SECOND LINE START **/
+
 .second_line {
+    grid-template-columns: repeat(4, auto);
 
 }
+
+.second_line_1{
+    background-color: red;
+}
+
+.second_line_2{
+    background-color: orangered;
+}
+
+.second_line_3{
+    background-color: yellow;
+}
+
+.second_line_4{
+    background-color: green;
+}
+
+/** SECOND LINE END**/
+
+
+
+/** THIRD LINE START**/
+
 .third_line {
+    grid-template-columns: repeat(3, auto);
 
 }
-.fourth_line {
 
+
+/** THIRD LINE END **/
+
+
+
+
+.fourth_line {
+    grid-template-columns: auto;
+
+}
+
+.news_line{
+    width: 70%;
+    height: auto;
+}
+
+
+
+.city_name {
+    display: grid; 
+    place-items: center;
+    height: 50%; 
+    text-align: center; 
+}
+
+.weather{
+    display: grid; 
+    place-items: center;
+    height: 50%; 
 }

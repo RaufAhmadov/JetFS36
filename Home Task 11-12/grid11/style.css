@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+img {
+    width: 100%; /* Изображения растягиваются по ширине контейнера */
+    height: auto; /* Сохраняем пропорции изображений */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+    display: block; /* Убираем нежелательные отступы вокруг изображений */
+}
+
+.wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 равные колонки */
+    max-width: 1200px;
+    margin: 0 auto; /* Центрируем контент */
+    background-color: aliceblue;
+
+}
+
+.gallery_img {
+    display: grid; /* Используем grid для каждого элемента галереи */
+    grid-template-columns: 1fr; /* Чтобы изображения шли вертикально */
+   
+    padding: 5px; /* Отступы вокруг блока изображения */
+    border-radius: 5px; /* Немного скругляем углы для эстетики */
+    object-fit: cover;
+}
+/*
+.gallery_img img {
+    width: 100%; 
+    height: auto; 
+}*/
+
+.img1 {
+    width: 500px;
+    height: 500px;
+}
+
+.img2 {
+    width: 200px;
+    height: 200px;
+}
+
+.img3 {
+    width: 200px;
+    height: 294px;
+}
+
+.img4 {
+    width: 300px;
+    height: 375px;
+}
+
+.img5 {
+    width: 300px;
+    height: 120px;
+}
+
+.img6,.img7,.img8{
+    width: 150px;
+    height: 168px;
+    padding: 2px;
+}

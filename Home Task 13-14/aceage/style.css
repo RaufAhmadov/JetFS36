@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3.3rem;
+    margin: 20px 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1A9AC9;
+    text-align: center;
+}
+
+img {
+    width: 100%; 
+    object-fit: cover; 
+    border: 1px solid #fff;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    width: 100%;
+}
+
+.container img:hover{
+    border: none;
+}
+
+
+.photo1 {
+    animation: move1 4s forwards 1;
+}
+
+.photo2 {
+    animation: move2 5s forwards 1;
+}
+
+.photo3 {
+    animation: move3 6s forwards 1;
+}
+
+.photo4 {
+    animation: move4 3.5s forwards 1;
+}
+
+.photo5 {
+    animation: move5 4.5s forwards 1;
+}
+
+.photo6 {
+    animation: move6 5.5s forwards 1;
+}
+
+.photo7 {
+    animation: move7 4s forwards 1;
+}
+
+.photo8 {
+    animation: move8 6s forwards 1;
+}
+
+.photo9 {
+    animation: move9 4s forwards 1;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateY(200%); 
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateY(200%); 
+    }
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes move4 {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes move5 {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes move6 {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateY(-100%); 
+    }
+}
+
+@keyframes move7 {
+    0% {
+        transform: translate(0)
+    }
+    100% {
+        transform: translate(0,-100%)
+    }
+}
+
+@keyframes move8 {
+    0%{
+        transform: translate(0)
+    }
+    100% {
+        transform: translateY(-200%)
+    }
+}
+
+@keyframes move9 {
+    0% {
+        transform: translate(0); /* Начальная позиция */
+    }
+    50% {
+        transform: translate(0, -200%); /* Вверх */
+    }
+    100% {
+        transform: translate(-200%, -200%); /* Влево и вверх */
+    }
+}

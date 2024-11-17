@@ -1,153 +1,75 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #2596be;
+body {
+    background-color: bisque;
 }
 
-p{
-    color: #fff;
+img {
+    object-fit: cover;
+    vertical-align: middle;
+    border: 4px solid #fff;
 }
 
-h1{
-    color: #fff;
-
-}
-
-
-
-.firs_line , .second_line, .third_line, .fourth_line{
+.wrapper {
     display: grid;
-    text-align: center;
-}
-/*
-.firs_line div, .second_line div, .third_line div, .fourth_line div {
-    display: grid; 
     place-items: center;
-    height: 100%; 
-    text-align: center; 
-    border: 2px solid #fff;
-}*/
-
-
-.wrapper{
-    display: grid;
-    justify-items: center;
-    width: 100%;
+    justify-self: center;
+    width: 50%;
     height: auto;
 }
 
-.text_line{
-    width: 70%;
-    height: auto;
+.title {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
     padding: 20px;
+    text-align: center;
 }
 
 .content {
     display: grid;
-    margin: 20px auto;
-    width: 70%;
-    height: auto;
-    grid-template-rows: repeat(4, 120px);
-    background-color: #60beda;
-    border: 2px solid #fff;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center; 
+    width: 100%;
+    background-color: #fff;
+}
 
+.gallery_img {
+    display: grid;
 }
 
 
-/** FIRST LINE START **/
-
-.firs_line {
-    grid-template-columns: repeat(3, auto);
+.img1 {
+    width: 500px;
+    height: 500px;
 }
 
-.firs_line p {
-    text-align: center;
+.img2 {
+    width: 200px;
+    height: 206px;
 }
 
-.firs_line_1{
-    background-color: darkcyan;
+.img3 {
+    width: 200px;
+    height: 294px;
 }
 
-
-.firs_line_2{
-    background-color: greenyellow;
+.img4 {
+    width: 300px;
+    height: 380px;
 }
 
-
-.firs_line_3{
-    background-color: purple;
+.img5 {
+    width: 300px;
+    height: 120px;
 }
 
-/** FIRST LINE END**/
-
-
-
-
-/** SECOND LINE START **/
-
-.second_line {
-    grid-template-columns: repeat(4, auto);
-
-}
-
-.second_line_1{
-    background-color: red;
-}
-
-.second_line_2{
-    background-color: orangered;
-}
-
-.second_line_3{
-    background-color: yellow;
-}
-
-.second_line_4{
-    background-color: green;
-}
-
-/** SECOND LINE END**/
-
-
-
-/** THIRD LINE START**/
-
-.third_line {
-    grid-template-columns: repeat(3, auto);
-
-}
-
-
-/** THIRD LINE END **/
-
-
-
-
-.fourth_line {
-    grid-template-columns: auto;
-
-}
-
-.news_line{
-    width: 70%;
-    height: auto;
-}
-
-
-
-.city_name {
-    display: grid; 
-    place-items: center;
-    height: 50%; 
-    text-align: center; 
-}
-
-.weather{
-    display: grid; 
-    place-items: center;
-    height: 50%; 
+.img6,.img7,.img8{
+    width: 150px;
+    height: 167px;
 }

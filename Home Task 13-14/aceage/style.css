@@ -151,12 +151,12 @@ img {
 
 @keyframes move9 {
     0% {
-        transform: translate(0); /* Начальная позиция */
+        transform: translate(0); /* Baslangic noqte Начальная позиция */
     }
     50% {
-        transform: translate(0, -200%); /* Вверх */
+        transform: translate(0, -200%); /* Вверх (Yuxari istiqamet yeri) */
     }
     100% {
-        transform: translate(-200%, -200%); /* Влево и вверх */
+        transform: translate(-200%, -200%); /* Влево (Sol istiqamet yeri) и вверх */
     }
 }

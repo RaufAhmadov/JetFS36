@@ -13,18 +13,25 @@ a{
   text-decoration: none;
 }
 
+.container{
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: auto;
+}
+
 /* HEADER START */
 
 header{
   width: 100%;
   height: auto;
+  background-color: #0126de;
 }
 
 .check_area {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0126de;
   width: 100%;
   height: auto;
   padding: 16px 0;
@@ -75,9 +82,13 @@ header{
 }
 
 nav{
+  background-color: #f5ede7;
+}
+
+.row{
   display: flex;
   justify-content: space-between;
-  background-color: #f5ede7;
+  width: 100%;
 }
 
 .nav_left, .nav_right{
@@ -118,45 +129,102 @@ nav{
 
 /* HEADER END */
 
-/* KITS AND SLIDER START */
+/* HERO SECTION START */
 
-.container_kits {
+main{
+  background-color: #ffc3a0;
+}
+
+.hero_wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 24px 16px;
+}
+
+.hero_left {
+  width: 40%;
+}
+
+.hero_left h1{
+  width: 400px;
+  font-size: 76px;
+  font-weight: 400;
+  line-height: 90px;
+  font-family: "Roboto", serif;
+  color: #000;
+  padding-bottom: 33px;
+}
+
+.hero_left p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000;
+  width: 420px;
+  padding-bottom: 32px;
+}
+
+.hero_left button {
+  border-radius: 20px;
+  padding: 11px 73px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: 400;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Roboto", serif;
+}
+
+.hero_right {
+  position: relative;
+  width: 60%;
+}
+
+.hero_right img{
   width: 100%;
   height: auto;
-  background-color: #FFC3A0;
-  padding: 10px;
-}
-.kits_left {
-
 }
 
-.kits_left h1{
+.hero_slider {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hero_slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.kits_left p{
+.hero_slider_btn {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
 }
 
-.kits_left button {
+.hero_slider_btn button{
+  padding: 0; /* Убираем внутренние отступы */
+  border: none; /* Убираем рамку */
+  background: transparent;
+  cursor: pointer; /* Устанавливаем курсор указателя */
 }
 
-.kits_right {
+.hero_slider_btn button img{
+  width: 100%; /* Изображение будет адаптироваться к размеру кнопки */
+  height: auto; /* Сохраняем пропорции изображения */
+  display: block; /* Убираем возможные отступы вокруг изображения */
 }
 
-.slider_img{
-  position: relative;
+/* HERO SECTION END */
+
+/* WORKS SECTION START */
+
+.works_wrapper {
+  background-color: #f5ede7;
+}
+.works_card {
 }
 
-.slider_btn{
- position: absolute;
- bottom: 5%;
- right: 3%;
-}
-
-.slider_btn button{
-
-}
-
-/* KITS AND SLIDER END */
+/* WORKS SECTION END */

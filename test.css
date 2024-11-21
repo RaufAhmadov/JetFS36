@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-colums: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое количество столбцов */
+    gap: 10px; /* Расстояние между элементами */
+    padding: 20px; /* Отступы от краев контейнера */
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Фон под фото */
+    border: 1px solid #ddd; /* Рамка вокруг фото */
+    border-radius: 5px; /* Скругление углов */
+    overflow: hidden; /* Чтобы фото не выходило за границы */
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Сохранение пропорций изображения */
+}

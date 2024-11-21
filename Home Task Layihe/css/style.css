@@ -14,7 +14,7 @@ a{
 }
 
 .container{
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   height: auto;
@@ -143,7 +143,7 @@ nav{
 }
 
 .hero_left {
-  width: 40%;
+  width: 463px;
 }
 
 .hero_left h1{
@@ -178,7 +178,7 @@ nav{
 
 .hero_right {
   position: relative;
-  width: 60%;
+  width: 899px;
 }
 
 .hero_right img{
@@ -223,6 +223,7 @@ nav{
 
 .wrapp_works {
   background-color: #f5eee7;
+  width: 100%;
   height: auto;
   padding: 20px;
 }
@@ -274,6 +275,12 @@ margin: 0 auto;
 }
 
 .works_card_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works_card_btn button , .freshly_btn {
   border-radius: 20px;
   padding: 11px 73px;
   background-color: transparent;
@@ -288,3 +295,304 @@ margin: 0 auto;
 }
 
 /* WORKS SECTION END */
+
+
+/* FRESHLY BAKED START */
+
+.freshly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 72px 0;
+}
+
+.freshly_img , .freshly_text{
+  width: 660px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.freshly_img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.freshly_text h3{ 
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 56px;
+}
+/* .freshly_btn {} .works_card_btn button koduna yonlendirilib */
+
+/* FRESHLY BAKED END */
+
+
+/* SHOP CART START */
+
+.shop_kits {
+  width: 100%;
+  height: auto;
+}
+.shop_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое количество столбцов */
+  gap: 10px; /* Расстояние между элементами */
+  padding: 20px; /* Отступы от краев контейнера */
+}
+.shop_cart {
+  width: 453px;
+  height: auto;
+}
+
+.shop_cart button{
+  border: 1px solid #0126DE;
+  color: #0126DE;
+  border-radius: 20px;
+  padding: 12px 73px;
+  background-color: transparent;
+}
+
+.shop_cart h5{
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000;
+  width: 35%;
+}
+
+.shop_cart p{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: 10px;
+}
+.shop_item_img {
+  width: 453px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.shop_item_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* SHOP CART END */
+
+/* BIG PHOTO START */
+
+.big_photo{
+  margin-top: 65px;
+  background-color: #f5eee7;
+}
+
+.photo{
+  width: 1440px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.photo img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.big_photo_container {
+  width: 100%;
+  height: auto;
+}
+.big_photo_cart {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding-bottom: 16px;
+}
+
+.big_photo_cart_img{
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.big_photo_cart_img h5{
+  padding: 0px 50px;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 68px;
+  text-align: center;
+  font-family: "Roboto", serif;
+}
+
+.big_photo_cart_img p {
+  padding: 20px 30px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.big_photo_cart_img img{
+  width: 100%;
+  padding: 24px 24px 0 24px;
+}
+
+/* BIG PHOTO END */
+
+
+/* BLOG NEWS START */
+
+.wrapp_blog {
+  width: 100%;
+  height: auto;
+}
+.blog_container {
+  margin: 0 20px 20px 20px;
+  background-color: #f5eee7;
+}
+.blog {
+  padding: 10px;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.news2{
+  flex-direction: row-reverse;
+}
+
+.news_img {
+  width: 537px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.news_img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news_text {
+  padding: 10px;
+  width: 534px;
+}
+
+.news_text h4{
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.news_text p{
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+  font-family: "Roboto", serif;
+}
+
+.news_text button{
+  padding: 11px 73px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  margin-top: 11px;
+}
+
+/* BLOG NEWS END */
+
+/* TARLA SLIDER START */
+
+.tarla_slider {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-top: 1px solid #000;
+}
+
+.tarla_slider h3{
+  text-align: center;
+  padding: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 43px;
+}
+
+.tarla_slider_img {
+  width: 100%;
+  height: auto;
+}
+
+.tarla_slider_img img{
+  width: 24.6%;
+  height: auto;
+}
+/* TARLA SLIDER END */
+
+/* FOOTER START */
+
+footer{
+  background-color: #f5eee7;
+}
+
+.footer_up {
+  text-align: center;
+}
+
+.footer_up h2{
+  padding: 16px 0 14px 0;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+}
+
+.footer_up h3{
+  padding: 0 0 14px 0;
+  font-size: 31px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+}
+.footer_up form input{
+  padding: 7px 139px;
+  border-radius: 10px;
+  background-color: #f5eee7;
+}
+
+.footer_up form input::placeholder{
+  color: #000;
+  font-size: 12px;
+  font-family: "Roboto", serif;
+}
+
+.footer_bottom {
+}
+
+.logo {
+}
+
+.logo img {
+}
+/* FOOTER END */

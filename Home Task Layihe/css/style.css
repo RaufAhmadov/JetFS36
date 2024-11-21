@@ -131,7 +131,7 @@ nav{
 
 /* HERO SECTION START */
 
-main{
+.wrapp_hero{
   background-color: #ffc3a0;
 }
 
@@ -221,10 +221,70 @@ main{
 
 /* WORKS SECTION START */
 
-.works_wrapper {
-  background-color: #f5ede7;
+.wrapp_works {
+  background-color: #f5eee7;
+  height: auto;
+  padding: 20px;
 }
+
 .works_card {
+  width: 100%;
+  height: auto;
+}
+
+.works_card h2{
+  padding: 60px 0;
+  font-family: "Roboto", serif;
+  font-size: 43px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.our_work_cards{
+  display: flex;
+  gap: 23px;
+  width: 100%;
+  height: auto;
+}
+
+.our_work_cards_img{
+  width: 99px;
+  height: 99px;
+margin: 0 auto;
+}
+
+.our_work_cards img{
+  width: 100%;
+  height: auto;
+}
+
+.our_work_cards h5{
+  font-weight: 400;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 5px 0;
+}
+
+.our_work_cards p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.works_card_btn{
+  border-radius: 20px;
+  padding: 11px 73px;
+  background-color: transparent;
+  font-weight: 400;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Roboto", serif;
+  border: 1px solid #0126DE;
+  color: #0126DE;
+  margin: 50px 0;
+
 }
 
 /* WORKS SECTION END */

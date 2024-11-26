@@ -28,57 +28,18 @@ header{
   background-color: #0126de;
 }
 
-.check_area {
+.check_menu{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: auto;
+  justify-content: center;
+  gap: 7px;
   padding: 16px 0;
 }
-.check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  width: auto;
-}
 
-.check p{
+.check_menu_text{
   color: #fff;
-}
-
-.check_text {
-  width: 150px;
-  height: 45px;
-  border: none;
-  border-radius: 10px;
-  padding: 0 0 0 14px;
-  background-color: rgb(64,92,230);
-  color: #000;
-  margin: 0 8px 0 0 ;
-}
-.check_btn {
-  padding: 14px 26px;
-  border-radius: 20px;
-  border: none;
-}
-
-.check_close{
-  width: auto;
-  height: auto;
-  margin-right: 20px;
-}
-
-.check_close button{
-  background-color: transparent;
-  border: none;
-  border-radius: 100%;
-}
-
-.check_close button img{
-  width: 100%;
-  height: auto;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 nav{
@@ -89,25 +50,61 @@ nav{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 10px 0;
 }
 
 .nav_left, .nav_right{
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 10px;
+}
+
+.nav_left_menu{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 80%;
+}
+
+.nav_left_menu a:nth-child(1){
+  text-align: left;
+  width: 9%;
+}
+
+.nav_left_menu a:nth-child(2){
+  text-align: left;
+  width: 17%;
+}
+
+.nav_left_menu a:nth-child(3){
+  text-align: left;
+  width: 25%;
 }
 
 .nav_left a, .nav_right a{
+  display: inline-block;
   color: #000;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
+  width: 100%;
+  height: auto;
+  margin-left: 16px;
 }
 
 .nav_left{
-  width: 30%;
-  gap: 10px;
+  width: 50%;
+  gap: 16px;
+  height: auto;
+}
+
+.nav_left_logo{
+  width: 20%;
+  height: auto;
+}
+
+.nav_left img{
+  width: 100%;
   height: auto;
 }
 
@@ -348,7 +345,7 @@ margin: 0 auto;
   padding: 20px; /* Отступы от краев контейнера */
 }
 .shop_cart {
-  width: 453px;
+  width: 100%;
   height: auto;
 }
 
@@ -378,7 +375,7 @@ margin: 0 auto;
   padding-bottom: 10px;
 }
 .shop_item_img {
-  width: 453px;
+  width: 100%;
   height: auto;
   border-radius: 20px;
   overflow: hidden;
@@ -399,7 +396,7 @@ margin: 0 auto;
 }
 
 .photo{
-  width: 1440px;
+  width: 100%;
   height: auto;
   padding-bottom: 10px;
 }
@@ -583,16 +580,105 @@ footer{
 
 .footer_up form input::placeholder{
   color: #000;
-  font-size: 12px;
+  font-size: 11px;
   font-family: "Roboto", serif;
 }
 
 .footer_bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding-top: 97px;
 }
 
 .logo {
+  width: auto;
+  height: auto;
+}
+
+.logo div{
+  width: auto;
+  height: auto;
 }
 
 .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.account {
+}
+.our_company {
+}
+.resources {
+}
+.tarlabakes {
+}
+.tarlabakes_social {
+
+}
+
+.sub_category{
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer_bottom h5{
+  font-family: "Roboto", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.sub_category a{
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+.social_icons{
+  padding: 0 1px;
+}
+
+.social_icons a{
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.social_icons a img {
+  width: 100%;
+  height: auto;
+}
+
+.copyrate{
+  width: 100%;
+  height: auto;
+  padding: 66px 0 64px 0;
+}
+.copyrate h4{
+  color: #000;
+  font-size: 0.9;
+  font-weight: 400;
 }
 /* FOOTER END */
+
+
+
+/* MEDIA QUERIES */
+
+
+/* Стили для всех смартфонов (ширина экрана до 480px) */
+@media (max-width: 480px) {
+  .check_btn{
+    
+    margin: 0 auto;
+  }
+}
+
+/* Стили для более крупных смартфонов (ширина экрана от 481px до 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+}

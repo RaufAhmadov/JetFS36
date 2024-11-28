@@ -181,11 +181,12 @@ nav{
 }
 
 .hero_left {
-  width: 463px;
+  width: 100%;
+  height: auto;
 }
 
 .hero_left h1{
-  width: 400px;
+  width: 50%;
   font-size: 76px;
   font-weight: 400;
   line-height: 90px;
@@ -199,7 +200,7 @@ nav{
   font-weight: 400;
   line-height: 28px;
   color: #000;
-  width: 100%;
+  width: 80%;
   padding-bottom: 32px;
 }
 
@@ -216,7 +217,7 @@ nav{
 
 .hero_right {
   position: relative;
-  width: 899px;
+  width: 100%
 }
 
 .hero_right img{
@@ -685,8 +686,9 @@ footer{
 
 .social_icons a{
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  margin: 0 1rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .social_icons a img {
@@ -701,7 +703,7 @@ footer{
 }
 .copyrate h4{
   color: #000;
-  font-size: 0.9;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 /* FOOTER END */
@@ -717,12 +719,218 @@ footer{
 }
 
 
-@media (max-width: 1000px) {
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CHECK MENU START */
+
+  .check_menu{
+    flex-wrap: wrap;
+  }
+  .check_menu_text{
+    width: 80%;
+  }
+  .check_menu_text p{
+    padding: 10px 20px;
+  }
+  .cancel_img{
+    right: 5%;
+    top: 10%;
+  }
+
+    /* NAV START */
+
+  .row{
+    justify-content: space-around;
+  }
+  .nav_left{
+    width: 60%;
+    gap: 16px;
+  }
+  .nav_left_logo{
+    width: 100%;
+    height: auto;
+  }
+  .nav_left_logo img{
+    width: 70%;
+    height: auto;
+    margin-left: 0.4rem;
+  }
+  .nav_left_menu{
+    width: 100%;
+    height: 100%;
+    gap: 4px;
+  }
+  .nav_left_menu a{
+    font-size: 1rem;
+  }
+  .nav_left_menu a:nth-child(1) {
+    width: 40%;
+    margin-left: 4px;
+  }
+  .nav_left_menu a:nth-child(2) {
+    width: 40%;
+    margin-left: 0;
+  }
+  .nav_left_menu a:nth-child(3) {
+    width: 50%;
+    margin-left: 4px;
+  }
+  .nav_right{
+    justify-content: end;
+    width: 41%;
+    gap: 0;
+  }
+  .nav_right a{
+    width: 20%;
+    margin: 0;
+  }
+
+  .nav_right a img{
+    width: 60%;
+  }
+
+
+    /* HERO START */
+
+
+    .hero_wrapper{
+      flex-wrap: wrap;
+    }
+    .hero_left{
+      width: 100%;
+      margin: 0 auto;
+      margin: 0 auto;
+    }
+    .hero_left h1{
+      font-size: 4.3rem;
+      width: 100%;
+      text-align: center;
+    }
+    .hero_left p{
+      font-size: 1.7rem;
+      margin: 0 auto;
+    }
+    .hero_left button{
+      margin: 0 12rem 3rem 14rem;
+    }
+  
+    .hero_right{
+      width: 100%;
+    }
+
+    /* FRESHLY START */
+
+  .freshly{
+    flex-wrap: wrap;
+  }
+  .freshly_text h3{
+    font-size: 2.5rem;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 40px;
+  }
+  .freshly_btn{
+    margin:  4rem 12rem 0 14rem;
+  }
+
+
+    /* SHOP GRID START */
+
+  .shop_grid{
+    grid: none;
+    justify-content: center;
+  }
+
+  .shop_item_img img{
+    width: 100%;
+    height: auto;
+  }
+  .shop_cart{
+    text-align: center;
+  }
+  .shop_cart h5{
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .shop_cart p{
+    font-size: 1.9rem;
+  }
+  .shop_cart button{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+  }
+
+
+  /* BIG PHOTO START */
+
+  .big_photo_cart{
+    grid: none;
+    gap: 0;
+  }
+  .big_photo_cart_img{
+    width: 100%;
+  }
+  .big_photo_cart_img h5{
+    font-size: 2rem;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .big_photo_cart_img p{
+    font-size: 1.4rem;
+  }
+  .tarla_slider_img{
+    text-align: center;
+  }
+  .tarla_slider_img img{
+    width: 48.6%;
+  }
+
+  /* FOOTER START */
+  .footer_bottom{
+    flex-wrap: wrap;
+  }
+
+  .footer_bottom h5 {
+    font-size: 1.8rem;
+    padding: 20px 0;
+  }
+
+  .sub_category a{
+    font-size: 1.2rem;
+  }
+
+  .logo , .account, .our_company, .resources, .tarlabakes{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .logo div{
+    width: 100%;
+    height: auto;
+  }
+
+  .logo div img{
+    width: 70%;
+    height: auto;
+  }
+
+  .social_icons a{
+    padding: 0 5px;
+  }
+
+  .copyrate{
+    text-align: center;
+    padding: 66px 0;
+  }
+
+
 }
 
 
-@media (max-width: 768px) {
-}
 
 
 @media (max-width: 480px) {
@@ -739,8 +947,10 @@ footer{
   }
   .cancel_img{
     right: 3%;
-    top: 10%;
+    top: 2%;
   }
+
+  
 
   /* CHECK MENU END */
 
@@ -785,7 +995,7 @@ footer{
   }
   .nav_right{
     justify-content: end;
-    width: 40%;
+    width: 41%;
     gap: 0;
   }
   .nav_right a{
@@ -812,6 +1022,7 @@ footer{
   }
   .hero_left h1{
     font-size: 2.3rem;
+    width: 100%;
   }
   .hero_left p{
     font-size: 0.9rem;
@@ -870,7 +1081,65 @@ footer{
   }
 
   /* NEWS BLOG END */
+
+  /* FOOTER START */
+
+  .footer_up form input{
+    padding: 7px 90px;
+  }
+
+  .footer_bottom{
+    flex-wrap: wrap;
+  }
+
+  .footer_bottom h5 {
+    font-size: 0.8rem;
+    padding: 20px 0;
+  }
+
+  .sub_category a{
+    font-size: 0.7rem;
+  }
+
+  .logo , .account, .our_company, .resources, .tarlabakes{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .logo div{
+    width: 100%;
+    height: auto;
+  }
+
+  .logo div img{
+    width: 80%;
+    height: auto;
+  }
+
+  .social_icons a{
+    padding: 0 5px;
+  }
+
+  .copyrate{
+    text-align: center;
+    padding: 66px 0;
+  }
+
+  /* FOOTER END */
 }
 
-/* Стили для более крупных смартфонов (ширина экрана от 481px до 768px) */
-/* @media (min-width: 481px) and (max-width: 768px) {} */
+@media (min-width: 360px) and (max-width: 740px) {
+  .nav_left_menu a:nth-child(3){
+    width: 53%;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .nav_right{
+    width: 45%;
+  }
+  .nav_right a{
+    width: 15%;
+  }
+}

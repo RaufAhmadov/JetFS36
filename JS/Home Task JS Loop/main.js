@@ -27,12 +27,21 @@
 
 // Обработка файлов Есть список названий файлов. Выведите только файлы с расширением .html
 
-let files = ["index.html", "style.css", "script.js", "about.html", "logo.png"];
+// let files = ["index.html", "style.css", "script.js", "about.html", "logo.png"];
 
-for ( let i = 0; i < files.length; i++ ) {
-    let parts = files.spit('.');
-    if (parts[files.split[i] -1 === 'html']) {
+// for (let i = 0; i < files.length; i++) {
+//     let parts = files[i].split('.'); // Разделяем текущий элемент массива
+//     if (parts[parts.length - 1] === 'html') { // Проверяем расширение
+//         console.log(files[i]); // Выводим файл с расширением .html
+//     }
+// }
 
-    }
-}
 
+// Обратный порядок Выведите элементы списка в обратном порядке.
+
+// let items = ["First", "Second", "Third", "Fourth"];
+// let reverse = "";
+
+// for ( let i = items.length -1 ; i >= 0; i-- ) {
+//     reverse = reverse + items[i];
+// }console.log(reverse)

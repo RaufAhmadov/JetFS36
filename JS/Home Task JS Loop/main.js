@@ -1,91 +1,38 @@
-// TEST
+// Список покупок Напишите программу, которая выводит каждый элемент из списка покупок по одному в строке.
 
-// let number = prompt();
-// let score = 0;
-// for(score; score < number; score++){
-//     console.log("Salam");
+// let shopping_list = ["Milk", "Eggs", "Bread", "Butter"]
+
+// for (let item of shopping_list) {
+//     console.log(item);
 // }
 
 
-// for(let i = 1; i <= 100; i++){
-//     // console.log(i);
-//     if(i % 2 == 0){
-//         document.write(i + ' cut' + '<br/>');
-//     }else{
-//         document.write(i + ' tek'  + '<br/>')
+// Печать букв в строке Напишите программу, которая проходит по всем символам строки и выводит каждый символ в отдельной строке.
+
+// let text = "Frontend";
+
+// for (let i = 0; i < text.length; i++) {
+//   console.log(text[i]);
+// }
+
+// Фильтр слов У вас есть список слов. Выведите только те слова, которые начинаются с буквы "A".
+
+// let words = ["Apple", "Banana", "Avocado", "Cherry", "Apricot"];
+
+// for (let i = 0; i < words.length; i++) {
+//     if (words[i][0] === 'A') {
+//         document.write(words[i]);
 //     }
 // }
 
+// Обработка файлов Есть список названий файлов. Выведите только файлы с расширением .html
 
+let files = ["index.html", "style.css", "script.js", "about.html", "logo.png"];
 
-// Создание массива строк:
+for ( let i = 0; i < files.length; i++ ) {
+    let parts = files.spit('.');
+    if (parts[files.split[i] -1 === 'html']) {
 
-// let safe = [] 
-
-// for (let i = 0; i < 100; i++) {
-//     let word = prompt("Type your word or click OK for cancel:").toLowerCase();
-//     if (word === "") {
-//         break;  
-//     }
-//     safe.push(word);  
-// }
-// for (let i = 0; i < safe.length; i++) {
-//     console.log(safe[i]);  
-// }
-    
-
-// Перебор строк в массиве:
-
-// let type = prompt().toLowerCase();
-// let names = ['rauf', 'john', 'conor', 'khabib', 'bones']
-// let found = false;
-
-// for(let i = 0; i < type.length; i++){
-//     if(type.includes(names[i])){
-//         console.log("We found your name on list");
-//         found = true;
-//         break;
-//     }
-// }
-// if(!found){console.log("Your name is not on list")};
-
-
-// let word = prompt().toLowerCase();
-// let reverse = "";
-
-// for(let i = word.length - 1; i >= 0; i--){
-//     reverse = reverse + word[i];
-// }console.log(reverse)
-    
-
-// let word = prompt().toLowerCase();
-// let count = 0;
-
-// for(let i = 0; i < word.length; i++){
-//     if(word[i]){
-//         count++
-//     }
-// }console.log(count);
-
-// let strings = ['apple', 'banana', 'kiwi', 'strawberry', 'orange', 'cherry'];
-// let word = prompt().toLowerCase();
-// let strings = [];
-// let longStrings = [];
-
-// for (let i = 0; i < 1; i++) {
-//     if (word.length <= 5) {
-//         strings.push(word);
-//     } else {
-//         longStrings.push(word);
-//     }
-// }
-
-// console.log("Short words: " + strings.join(" "));
-// console.log("Long words: " + longStrings.join(" "));
-
-
-
-
-
-// HOME TASK
+    }
+}
 

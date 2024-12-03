@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+header , main , footer {
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.7rem 0;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+/*  NAVIGATION STRAT */
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.location a {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.location_p{
+    color: #424242;
+    font-weight: 700;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.location_current{
+    color: #424242;
+    font-weight: 400;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.location img{
+    padding: 0 0.5rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: 0.625rem;
+}
+
+.search_btn, .login_btn {
+    display: flex; /* Устанавливает flex-контейнер */
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 0.625rem; /* Расстояние между иконкой и текстом (8px) */
+    background-color: #fff;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    /* box-shadow: 0 0 1px 1px #FFAE0042; */
+}
+
+.login_btn:hover , .search_btn:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.29);
+}
+
+.search_btn{
+    color: #424242;
+    font-weight: 700;
+}
+
+.login_btn {
+    color: #FFB800;
+    font-weight: 700;
+}
+
+/* HEAD HERO STRAT */
+
+.head_hero{
+    background-image: url(/HTML/foodwagon/assets/img/photo/header_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}

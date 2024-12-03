@@ -1,28 +1,64 @@
+/* Убираем стандартные отступы */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.photo-grid {
-    display: grid;
-    grid-template-colums: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое количество столбцов */
-    gap: 10px; /* Расстояние между элементами */
-    padding: 20px; /* Отступы от краев контейнера */
-}
-
-.photo {
+/* Контейнер */
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; /* Фон под фото */
-    border: 1px solid #ddd; /* Рамка вокруг фото */
-    border-radius: 5px; /* Скругление углов */
-    overflow: hidden; /* Чтобы фото не выходило за границы */
+    flex-direction: column;
+    justify-content: space-between; /* Разделяет шапку, контент и подвал */
+    align-items: center; /* Центрирует по горизонтали */
+    width: 100vw; /* Полная ширина экрана */
+    height: 100vh; /* Полная высота экрана */
+    background-color: #f0f0f0; /* Фон страницы */
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px; /* Минимальная ширина сайта */
+    height: 100vh;
+    margin: 0 auto;
 }
 
-.photo img {
+/* Шапка */
+.header {
+    background-color: #4caf50; /* Зеленый фон */
+    color: white;
+    text-align: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Сохранение пропорций изображения */
+    padding: 20px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+}
+
+/* Основной блок */
+.main {
+    flex: 1; /* Занимает всё доступное пространство между шапкой и подвалом */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    width: 100%;
+    background-color: #2196f3; /* Синий фон */
+    border: 2px solid black;
+}
+
+/* Вложенный контент */
+.content {
+    background-color: #ffeb3b; /* Желтый фон */
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Подвал */
+.footer {
+    background-color: #f44336; /* Красный фон */
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
 }

@@ -18,8 +18,8 @@ button{
 }
 
 header , main , footer {
-    height: 100%;
     width: 100%;
+    height: auto;
 }
 
 nav{
@@ -78,7 +78,7 @@ nav{
     gap: 0.625rem;
 }
 
-.search_btn, .login_btn {
+.search_btn, .login_btn, .form_btn {
     display: flex; /* Устанавливает flex-контейнер */
     align-items: center; /* Центрирование по вертикали */
     justify-content: center; /* Центрирование по горизонтали */
@@ -86,15 +86,9 @@ nav{
     background-color: #fff;
     font-size: 1.1rem;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 0.4rem 1rem;
     text-align: center;
     border: none;
-    /* box-shadow: 0 0 1px 1px #FFAE0042; */
-}
-
-.login_btn:hover , .search_btn:hover {
-    transition: 0.5s;
-    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.29);
 }
 
 .search_btn{
@@ -105,15 +99,125 @@ nav{
 .login_btn {
     color: #FFB800;
     font-weight: 700;
+    box-shadow: 0 10px 10px 5px rgba(255, 174, 0, 0.29);
 }
+
+.login_btn:hover , .search_btn:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.29);
+}
+
+
 
 /* HEAD HERO STRAT */
 
 .head_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(/HTML/foodwagon/assets/img/photo/header_bg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+    padding: 5rem 0;
+}
+
+.head_hero_left {
+    height: auto;
+}
+.head_hero_left_text {
+    width: 100%;
+    height: auto;
+}
+
+.head_hero_left_text h1{
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.head_hero_left_text h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(80, 79, 79, 1);
+}
+
+.head_hero_left_form {}
+
+.form_up{
+    padding: 0 0 0.75rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.644);
+}
+
+.form_bottom{
+    padding: 0.75rem 0 0 0;
+}
+
+.head_hero_left_form form{
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+}
+
+.head_hero_left_form form div {
+    display: flex;
+}
+
+.head_hero_left_form form input{
+    background-color: rgba(245, 245, 245, 1);
+    width: 75%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.form_btn {}
+
+.form_delivery_btn, .form_pickup_btn {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form_delivery_btn{
+    color: rgba(241, 114, 40, 1)
+}
+
+.form_delivery_btn:hover, .form_pickup_btn:hover{
+    background-color: rgba(241, 114, 40, 0.1);
+}
+
+.form_pickup_btn{
+    color: rgba(117, 117, 117, 1);
+}
+
+.form_find_btn {
+    background-color: rgba(246, 89, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 0 1rem;
+}
+
+.form_find_btn:hover{
+    background-color: rgba(255, 122, 122, 1);
+}
+
+.head_hero_right {
+    height: auto;
+}
+
+.head_hero_right_img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.head_hero_right_img img {
+    width: 80%;
+    height: 80%;
 }

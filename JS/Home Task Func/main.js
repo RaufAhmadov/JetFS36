@@ -100,7 +100,6 @@
 
 
 // Task-06 İstifadəçidən bir ay adı daxil etməsini tələb edən və həmin ayın neçə gün çəkdiyini göstərən bir proqram yazın. (switch-case ilə)
-// January: 31
 // February: 28 (29 in leap years)
 // March: 31
 // April: 30
@@ -112,5 +111,51 @@
 // October: 31
 // November: 30
 // December: 31
+
+let check = prompt("12 aydan birini secin ve ingilis dilinde yazin").toLowerCase();
+
+switch (check) {
+    case "january":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    case "february":
+        document.write(check + " ayinda 28 gun var (ilden asili olaraq 28-29 gun ola biler)");
+        break;
+    case "march":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    case "april":
+        document.write(check + " ayinda 30 gun var");
+        break;
+    case "may":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    case "june":
+        document.write(check + " ayinda 30 gun var");
+        break;
+    case "july":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    case "august":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    case "september":
+        document.write(check + " ayinda 30 gun var");
+        break;
+    case "october":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    case "november":
+        document.write(check + " ayinda 30 gun var");
+        break;
+    case "december":
+        document.write(check + " ayinda 31 gun var");
+        break;
+    default:
+        document.write(check + " movcud olmayan ay");
+        break;
+}
+
+
 
 // Task-07 İstifadəçidən bir ədəd daxil etməsini tələb edən və bu ədədin Armstrong rəqəmi olub olmadığını yoxlayan bir proqram yazın. (dövrlə və if-else ilə)

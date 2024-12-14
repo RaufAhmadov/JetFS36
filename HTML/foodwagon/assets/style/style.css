@@ -115,7 +115,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/HTML/foodwagon/assets/img/photo/header_bg.png);
+    background-image: url(/HTML/foodwagon/assets/img/photo/header_bg2.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -291,6 +291,7 @@ nav{
     font-size: 1.3rem;
     color: #F17228;
     background-color: rgba(241, 114, 40, 0.2);
+    text-align: center;
 }
 
 /* HOW DOES IT WORK */
@@ -413,4 +414,28 @@ nav{
 
 .item_btn:hover{
     box-shadow: 0 0 10px 5px rgba(250, 99, 35, 0.24)
+}
+
+
+/* FEATURED RESTOURANTS */
+
+.restourants {
+}
+.restourant_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature_restourants {
+}
+.restourants_food_img {
+}
+.restourant_discount {
+}
+.restourants_logo {
+    display: flex;
+}
+.restourants_name {
+}
+.restourant_btn {
 }

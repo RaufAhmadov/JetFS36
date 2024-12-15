@@ -26,17 +26,17 @@
 
 // Task 2 
 
-function check(obj){
-    for(let key in obj){
-        return false;
-    }
-    return true;
-};
+// function check(obj){
+//     for(let key in obj){
+//         return false;
+//     }
+//     return true;
+// };
 
-let obj = {};
+// let obj = {};
 
-// obj.name = "";
+// // obj.name = "";
 
-let result = check(obj);
+// let result = check(obj);
 
-console.log(result);
+// console.log(result);

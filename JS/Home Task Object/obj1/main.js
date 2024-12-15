@@ -67,31 +67,36 @@
 // Task-04 Əsas riyazi hesablamaları yerinə yetirən və nəticəni yaddaşda saxlaya bilən kalkulyator obyekti yaradın.
 // Toplama, çıxma, vurma, bölmə üçün metodlar əlavə edin.
 
-const calc = {
-    num1: 0,
-    math: "",
-    num2: 0,
-};
+// const calc = {
+//     num1: 0,
+//     math: "",
+//     num2: 0,
+// };
 
-let firstNum = +prompt("First number");
-let mathOption = prompt("Choose option ( + - * / %)");
-let secondNum = +prompt("Second number");
+// let firstNum = +prompt("First number");
+// let mathOption = prompt("Choose option ( + - * / %)");
+// let secondNum = +prompt("Second number");
 
-if (firstNum >= 0 && secondNum >= 0 && (mathOption === "+" || mathOption === "-" || mathOption === "*" || mathOption === "/" || mathOption === "%")) {
-    calc.num1 = firstNum;
-    calc.math = mathOption;
-    calc.num2 = secondNum;
-    if (calc.math === "+") {document.write(`Result: ${calc.num1 + calc.num2}`);} 
-    else if (calc.math === "-") {document.write(`Result: ${calc.num1 - calc.num2}`);} 
-    else if (calc.math === "*") {document.write(`Result: ${calc.num1 * calc.num2}`);} 
-    else if (calc.math === "/") {
-        if (calc.num2 === 0) {document.write("Error: Sıfıra bölünmür.");} 
-        else {document.write(`Result: ${calc.num1 / calc.num2}`);}
-    } else if (calc.math === "%") {
-        if (calc.num2 === 0) {document.write("Error: Sıfıra bölünmür.");} 
-        else {document.write(`Result: ${calc.num1 % calc.num2}`);}
-    }
-} else {document.write("Error: 0 dan aşağı rəqəm və yaxud yalnış əməliyyat.");}
+// if (firstNum >= 0 && secondNum >= 0 && (mathOption === "+" || mathOption === "-" || mathOption === "*" || mathOption === "/" || mathOption === "%")) {
+//     calc.num1 = firstNum;
+//     calc.math = mathOption;
+//     calc.num2 = secondNum;
+//     if (calc.math === "+") {document.write(`Result: ${calc.num1 + calc.num2}`);} 
+//     else if (calc.math === "-") {document.write(`Result: ${calc.num1 - calc.num2}`);} 
+//     else if (calc.math === "*") {document.write(`Result: ${calc.num1 * calc.num2}`);} 
+//     else if (calc.math === "/") {
+//         if (calc.num2 === 0) {document.write("Error: Sıfıra bölünmür.");} 
+//         else {document.write(`Result: ${calc.num1 / calc.num2}`);}
+//     } else if (calc.math === "%") {
+//         if (calc.num2 === 0) {document.write("Error: Sıfıra bölünmür.");} 
+//         else {document.write(`Result: ${calc.num1 % calc.num2}`);}
+//     }
+// } else {document.write("Error: 0 dan aşağı rəqəm və yaxud yalnış əməliyyat.");}
 
 
+
+// Task-05. propertyTaker() adinda funksiya yaradin. Argument kimi obyekt (obj) ve string (proprtyName) alsin. Hemin obyektin verdiyim propertyni ekrana cixarsin
+// propertyTaker({ continent: 'Asia', country: 'Japan'}, 'continent') // 'Asia'
+// propertyTaker({ country: 'Sweden', continent: 'Europe'}, 'country') // 'Sweden'
+// propertyTaker({name:'roma', age:12}, 'name') // 'roma'
 

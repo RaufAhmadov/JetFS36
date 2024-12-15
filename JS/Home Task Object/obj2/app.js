@@ -77,3 +77,33 @@
 
 // 4. Spread və rest operatorları arasındakı fərqi izah edin.Hər ikisinin istifadəsinə aid nümunələr yaın
 
+// Spread (Massivi istədiyimiz dəyişənə əlavə edirik)
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const result = [...arr1, ...arr2];
+// console.log(result);
+
+
+// Rest (Birinci element birinci sözü mənimsəyir digərləri ikinci elementə)
+
+// function greetAll(firstGreeting, ...names) {
+//     console.log(firstGreeting);
+//     console.log(names);
+// }
+
+// greetAll("Hello", "John", "Jane", "Mike");
+
+
+// 7. existsAndTruthy() adinda funksiya yaradin. 2 ədəd argument alır: obyekt(obj) ve string (propertyName). Eger hemin obyektden o adda property varsa ve truthy-dirse, true qaytarsin eks halda false qaytarsin. Mes:
+// existsAndTruthy({a:1,b:2,c:3},'b') // true
+
+// function existsAndTruthy(first , second) {
+
+// }
+
+// let name = prompt("Elementi test edin: ").toLowerCase();
+
+// console.log(existsAndTruthy({a:1,b:2,c:3},'b')); // true
+// console.log(existsAndTruthy({x:'a',y:null,z:'c'},'y')); // false (obyektde 'y' var amma falsy-di ona gore false)
+// console.log(existsAndTruthy({x:'a',b:'b',z:undefined},'z')); // false (obyektde 'z' yoxdu ona gore false)

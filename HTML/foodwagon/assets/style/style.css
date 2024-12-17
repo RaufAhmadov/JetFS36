@@ -420,22 +420,81 @@ nav{
 /* FEATURED RESTOURANTS */
 
 .restourants {
+    padding: 2rem;
+}
+.restourants h2{
+    color: #212121;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 5.5rem;
 }
 .restourant_cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem 1rem;
 }
 .feature_restourants {
+    border-radius: 1rem;
+    overflow: hidden;
 }
 .restourants_food_img {
+    object-fit: cover;
 }
 .restourant_discount {
 }
 .restourants_logo {
     display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    padding: 2rem 0 1.5rem 0;
 }
-.restourants_name {
+.restourants_name p{
+    color: #424242 ;
+    font-size: 22px;
+    font-weight: 700;
 }
-.restourant_btn {
+.restourants_name p:hover{
+    text-decoration: underline #F17228;
+    cursor: pointer;
+}
+
+.restourant_raiting {
+    display: flex;
+    align-items: center;
+    color: #FFB30E;
+    font-size: 22px;
+    font-weight: 400;
+    gap: 8px;
+}
+
+.restourant_raiting:hover{
+    color: #c98e0e;
+}
+.restourant_btn_disable {
+    background-color: rgba(241, 114, 40, 0.2);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: #F17228;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.restourant_btn_active {
+    background-color: rgba(121, 185, 60, 0.2);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: #F17228;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.restourant_btn_disable:hover{
+    background-color: #F17228;
+    color: #fff;
 }

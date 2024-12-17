@@ -488,13 +488,122 @@ nav{
     background-color: rgba(121, 185, 60, 0.2);
     border-radius: 1rem;
     padding: 0.5rem 1rem;
-    color: #F17228;
+    color: #79B93C;
     font-weight: 700;
     font-size: 1.3rem;
     border: none;
 }
 
+.restourant_btn_active:hover{
+    background-color: #629432;
+    color: #fff; 
+}
+
 .restourant_btn_disable:hover{
     background-color: #F17228;
     color: #fff;
+}
+
+.view_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_all button{
+    padding: 21px 48px;
+    background: linear-gradient(to right, rgba(255, 186, 38, 1) 50%, rgba(255, 154, 14, 1) 100%);
+    border-radius: 0.9rem;
+    border: none;
+    color: #fff;
+    margin-top: 5.5rem;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.29);
+}
+
+.view_all button:hover{
+    background: linear-gradient(to left, rgba(255, 186, 38, 1) 50%, rgba(255, 154, 14, 1) 100%);
+    transition: 1s;
+}
+
+/* SEARCH BY FOOD */
+
+.search_by_food {
+    padding: 20px;
+    background-color: #FEFAF1;
+}
+.search_by_name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0 7.5rem 0;
+}
+.search_by_name h2{
+    color: #212121;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.search_by_name div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+.search_by_view_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FFB30E;
+}
+
+.search_by_view_all:hover{
+    color: #F17228;
+}
+
+.search_by_slide_right, .search_by_slide_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAAA01;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+.search_by_slide_right img, .search_by_slide_left img{
+    width: 70%;
+}
+.search_by_slide_right:hover, .search_by_slide_left:hover{
+    box-shadow: 0 0 10px 5px rgba(241, 114, 40, 1);
+}
+
+.search_by_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+}
+.search_by_items {
+}
+.search_by_items div{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+}
+.search_by_items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.search_by_items p{
+    text-align: center;
+    text-transform: capitalize;
+    color: #424242;
+    font-size: 1.3rem;
+    font-weight: 700;
 }

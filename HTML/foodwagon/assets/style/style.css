@@ -607,3 +607,140 @@ nav{
     font-size: 1.3rem;
     font-weight: 700;
 }
+
+
+/* FEATURES AND MOBILE DOWNLOAD */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: rgba(254, 239, 208, 1);
+    padding: 8rem 0 8.8rem 0;
+}
+
+.features_cards_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.1rem;
+    gap: 7rem;
+    background-color: #fff;
+    border-radius: 2.8rem;
+    width: 80%;
+}
+
+.features_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    width: auto;
+}
+.features_cards p{
+    width: 50%;
+    font-weight: 700;
+    font-size: 2.1rem;
+    background-image: linear-gradient(to left, rgba(251, 60, 0, 1) 50% , rgba(255, 184, 0, 1) 100%);;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.features_cards div {
+    width: 40%;
+}
+.features_cards div img{
+    width: 100%;
+    height: auto;
+}
+
+/* MOBILE DOWNLOADS */
+
+.download_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(254, 239, 208, 1);
+}
+.phone {
+    width: 40%;
+    height: auto;
+}
+.phone img{
+    width: 100%;
+    height: auto;
+}
+.download_app {
+    width: 30%;
+    height: auto;
+}
+.download_app h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.1rem;
+    background-image: linear-gradient(to left, rgba(255, 184, 0, 1) 50% , rgba(255, 138, 0, 1) 100%);;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.download_app p{
+    width: 65%;
+    margin: 0 auto 0 3.5rem;
+    color: rgba(130, 126, 126, 1);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.download_links {
+    margin: 0 auto 0 3.5rem;
+    padding: 2.5rem 0;
+}
+
+.download_links a{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    width: 30%;
+    overflow: hidden;
+    text-decoration: none; /* Убирает подчеркивание */
+    line-height: 0; /* Убирает лишние отступы */
+    border-radius: 0.5rem;
+}
+.download_links a img{
+    width: 100%;
+    height: auto;
+}
+
+.download_links a:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 186, 38, 1);
+}
+
+/* DETAILS SECTIONS */
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+.detail_cards {
+}
+.detail_cads_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details_desc {
+}
+.cetails_btn {
+}

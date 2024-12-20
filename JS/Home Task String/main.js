@@ -63,4 +63,58 @@
 // 5.Funksiya yazın.Arqument olaraq aldığı sözün içərisində rəqəmləri seçsin və geri qaytarsın.Məsələn: "hell5o wor6ld" -> 56
 
 
+// function check(inputText){
+//     let number = "";
+//     for(let i = 0; i <inputText.length; i++){
+//         let search_num = inputText[i];
+//         if (!isNaN(search_num)) {
+//             number = number + search_num;
+//         }
+//     };
+//     return number;
+// }
+
+// let text = prompt("Input").toLowerCase();
+// let result = check(text);
+// document.write(result)
+
+
+// 6.Remove all exclamation
+// Funksiya yazın.Arqument olaraq string alsın,sözün içərisindəki bütün nida işarələrini silsin və sözün sonuna bir ədəd nida işarəsi əlavə etsin. məsələn: He!llo! !!FE-25 // netice olmalıdır Hello FE-25!
+
+// function removal(check) {
+//     let del = check.match(/!/);
+//     if (del) {
+//         let count = del[0].length;
+//         check = check.slice(count);
+//         check = check + "!".repeat(count);
+//     }
+//     return check;
+// }
+
+// let word = prompt("Text daxil edin (! simvolu elave edin):").toLowerCase();
+// let result = removal(word);
+// document.write(result);
+
+
+// 7.Funksiya yazın,qəbul etdiyi parametrin baş hərfini böyütsün və ekarana yazdırsın
+
+// let word = prompt("Input Text:");
+// let build = word[0].toUpperCase() + word.slice(1).toLowerCase();
+
+// document.write(build);
+
+
+// 8.Funksiya yazın,qəbul etdiyi parametrin bütün hərflərini böyütsün və ekarana yazdırsın
+
+// let word = prompt("Input Text:").toUpperCase();
+// document.write(word);
+
+
+// 9.Funksiya yazın,qəbul etdiyi parametrin bütün hərflərini kiçiltsin və ekarana yazdırsın
+
+// let word = prompt("Input Text:").toLowerCase();
+// document.write(word);
+
+
 

@@ -118,3 +118,107 @@
 
 
 
+// 10.Funksiya yaradin, ilk characterimizi deyisek: ilkHerfiDeyis(soz, ilkHerf) ilkHerfiDeyis('Qara', "Y") // Yara
+
+// function change(word){
+//     if (word) {
+//         word = word.replace(word[0], "Y");
+//         return word;
+//     }
+// };
+
+// let input = "Qara";
+// let result = change(input);
+// document.write(result);
+
+
+// 11. funksiya yazın ad və soyad alsın və aşağıdakı kimi nəticə versin nameFormat(str) —> Ramin Mammadzada-=> M. Ramin
+
+// function name_formatter(full_name) {
+//     let parts = full_name.split(" ");
+//     let first = parts[0];
+//     let last = parts[1];
+//     return `${last[0].toUpperCase()}.${first}`
+// }
+
+// let input = prompt();
+// let result = name_formatter(input);
+// document.write(result);
+
+
+// 12. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir, abcdf@gmail.com meselen) //true
+
+// function verify(address){
+//     let parts = address.split("@");
+//     let first = parts[0];
+//     let second = parts[1];
+//     if (address) {
+//         second === "@gmail.com";
+//         return `Your Email Address Is Correct: ${first}@${second}`; //true
+//     }else{"Your Email Address Incorrect , Please use only GMAIL.COM"}; //false
+// }
+
+// let input = prompt();
+// let result = verify(input);
+// document.write(result)
+
+
+// 13. Funksiya yazın,aldığı paramterdə bütün hərflər böyükdürsə true deyilsə false qaytarsın
+
+// function checker(upcase){
+//     if (upcase === upcase.toUpperCase()) {
+//         return true;     
+//     }
+//     else{return false;}
+// };
+
+// let input = prompt();
+// let result = checker(input);
+// document.write(result);
+
+
+// 14. Funksiya yazın.Cümlə alacaq parametr olaraq.Funksiya isə cümlənin ilk 5 simvolunu geri qaytaracaq
+
+// Method 1
+
+// function checker(symbol) {
+//     if (symbol.length >= 5) {
+//         return symbol.substring(0, 5); // Birinci 5 herfi gorsedir
+//     } else {
+//         return "Söz 5 simvoldan azdır";
+//     }
+// }
+
+// let input = prompt("Введите строку:");
+// let result = checker(input);
+// document.write(result);
+
+
+// Method 2
+
+// function checker(symbol){
+//     if (symbol.length >= 5) {
+//         let count = "";
+//         for(let i = 0; i < 5; i++){
+//             count = count + symbol[i];
+//         }
+//         return count;
+//     }
+//     else{return "Söz 5 simvoldan azdır";}
+// };
+
+// let input = prompt().trim();
+// let result = checker(input);
+// document.write(result);
+
+
+
+// 15. Funksiya yazın.Parametr alsın.Sözün içərisində nəqədər boşluq varsa hamsı - işarəsi olsun
+
+// function changer(params) {
+//     return params.replaceAll(" ", "-");
+// }
+
+// let input = prompt();
+// let result = changer(input);
+// document.write(result);

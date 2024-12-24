@@ -29,3 +29,18 @@
 // }
 
 
+// 4.İstifadəçidən vergüllə ayrılmış beş ədədi daxil etməyi xahiş edin və onları massivdə saxlayın. İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massivə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
+
+// let input = prompt().trim();
+// let new_arr = input.split(",").map(Number);
+// let result = Math.min(...new_arr);
+
+// document.write(result); 
+
+
+
+// 5. Verilən mətn tip dəyərdəki vergülləri nöqtəli vergüllə əvəz edin. '32, 31, 34, 36, 31' mətni verilmişdir ,İçindəki vergülləri nöqtəli vergüllə əvəz edin.(Massivden istifadə ederek
+
+// let input = [32, 31, 34, 36, 31];
+// let result = input.join(";");
+// document.write(result);

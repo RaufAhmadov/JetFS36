@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* Контейнер */
 .container {
     display: flex;
@@ -23,7 +24,7 @@
 
 /* Шапка */
 .header {
-    background-color: #4caf50; /* Зеленый фон */
+    background-color: green; /* Зеленый фон */
     color: white;
     text-align: center;
     width: 100%;
@@ -39,13 +40,13 @@
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
     width: 100%;
-    background-color: #2196f3; /* Синий фон */
+    background-color: blue; /* Синий фон */
     border: 2px solid black;
 }
 
 /* Вложенный контент */
 .content {
-    background-color: #ffeb3b; /* Желтый фон */
+    background-color: yellow; /* Желтый фон */
     padding: 20px;
     border: 2px solid black;
     font-size: 1.5rem;
@@ -54,7 +55,7 @@
 
 /* Подвал */
 .footer {
-    background-color: #f44336; /* Красный фон */
+    background-color: red; /* Красный фон */
     color: white;
     text-align: center;
     width: 100%;
@@ -62,3 +63,41 @@
     border: 2px solid black;
     font-size: 1rem;
 }
+
+
+.red{
+    background-color: red;
+    color: yellow;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.green{
+    background-color: yellowgreen;
+    color: purple;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.yellow{
+    background-color: brown;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.blue{
+    background-color: teal;
+    color: bisque;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+

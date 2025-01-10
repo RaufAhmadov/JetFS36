@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    gap: 20px;
+    border-bottom: 4px solid black;
+}
+
+#cube {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.default {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.red {
+    background-color: red;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+}
+
+.green {
+    background-color: green;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+.blue {
+    background-color: blue;
+    color: red;
+    border: 2px solid red;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+#red_btn {
+    background-color: red;
+}
+
+#green_btn {
+    background-color: green;
+}
+
+#blue_btn {
+    background-color: blue;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    gap: 20px;
+    border-bottom: 4px solid black;
+}
+
+.lamp_div{
+    width: 120px;
+    height: 105px;
+    text-align: center;
+}
+
+.lamp_div img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn_off_div {
+    width: 30px;
+    height: 30px;
+}
+
+.btn_off_div img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

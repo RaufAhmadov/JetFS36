@@ -16,21 +16,21 @@
 // )
 
 
-// const get_header = document.querySelector("#header");
-// const get_main = document.querySelector("#main");
-// const get_content = document.querySelector("#content");
-// const get_footer = document.querySelector("#footer");
-// const get_btn = document.querySelector("#change_btn");
+const get_header = document.querySelector("#header");
+const get_main = document.querySelector("#main");
+const get_content = document.querySelector("#content");
+const get_footer = document.querySelector("#footer");
+const get_btn = document.querySelector("#change_btn");
 
 
-// get_btn.onclick = function(){
-//     const backgroundColor = header.getAttribute("header");
+get_btn.onclick = function(){
+    const backgroundColor = header.getAttribute("header");
 
-//     if(backgroundColor === "green"){ header.setAttribute(".header" , ".red"); }
-//     else if(backgroundColor === "blue"){ content.setAttribute(".main" , ".green");}
-//     else if(backgroundColor === "yellow"){ content.setAttribute(".content" , ".yellow");}
-//     else if(backgroundColor === "red"){ footer.setAttribute(".footer", ".blue")}
-// }
+    if(backgroundColor === "green"){ header.setAttribute(".header" , ".red"); }
+    else if(backgroundColor === "blue"){ content.setAttribute(".main" , ".green");}
+    else if(backgroundColor === "yellow"){ content.setAttribute(".content" , ".yellow");}
+    else if(backgroundColor === "red"){ footer.setAttribute(".footer", ".blue")}
+}
 
 
 // const get_header = document.querySelector("#header");

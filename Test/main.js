@@ -33,20 +33,26 @@
 // }
 
 
-const get_header = document.querySelector("#header");
-const get_main = document.querySelector("#main");
-const get_content = document.querySelector("#content");
-const get_footer = document.querySelector("#footer");
-const get_btn = document.querySelector("#change_btn");
+// const get_header = document.querySelector("#header");
+// const get_main = document.querySelector("#main");
+// const get_content = document.querySelector("#content");
+// const get_footer = document.querySelector("#footer");
+// const get_btn = document.querySelector("#change_btn");
 
-get_btn.onclick = function(){
-    const result = 0;
-    for(let x of){}
-        get_header.setAttribute("class","red");
-        get_main.setAttribute("class","green");
-        get_content.setAttribute("class","yellow");
-        get_footer.setAttribute("class","blue");
-}
+// get_btn.onclick = function(){
+//     const result = 0;
+//     for(let x of){}
+//         get_header.setAttribute("class","red");
+//         get_main.setAttribute("class","green");
+//         get_content.setAttribute("class","yellow");
+//         get_footer.setAttribute("class","blue");
+// }
+
+
+// LAMP
+
+
+
 
 
 

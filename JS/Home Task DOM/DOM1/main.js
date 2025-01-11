@@ -9,7 +9,7 @@ const get_green = document.querySelector("#green_btn");
 const get_blue = document.querySelector("#blue_btn");
 
 function changer(color) {
-    cube.setAttribute("class", color);
+    get_header.setAttribute("class", color);
 }
 
 get_red.onclick = function(){changer("red")} 

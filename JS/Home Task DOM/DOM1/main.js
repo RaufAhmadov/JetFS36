@@ -41,16 +41,6 @@ switch_btn.onclick = function(){
     
 };
 
-// METHOD 2
-
-// switch_btn.onclick = function(){
-//     const isLampOff = light.getAttribute("src").includes("light-off.png");
-
-//     light.setAttribute("src", isLampOff ? "/JS/Home Task DOM/DOM1/img/light-on.png" : "/JS/Home Task DOM/DOM1/img/light-off.png");
-//     switch_btn.setAttribute("src", isLampOff ? "/JS/Home Task DOM/DOM1/img/button-off.png" : "/JS/Home Task DOM/DOM1/img/button-on.png");
-// }
-
-
 // TASK 3 OBJECT
 
 const arr = [

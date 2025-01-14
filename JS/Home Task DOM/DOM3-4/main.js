@@ -8,6 +8,9 @@ const getNumber = document.querySelector("#number");
 const getCity = document.querySelector("#city");
 const addBtn = document.querySelector("#submit");
 const getResult = document.querySelector("#result");
+const getSearch = document.querySelector("#search");
+const getSearchBtn = document.querySelector("#search_btn");
+const getSearchResult = document.querySelector("#searchResult");
 
 let action = () => {
     const userData = {
@@ -25,3 +28,11 @@ addBtn.onclick = function(event) {
     event.preventDefault();
     action();  
 };
+
+let search = action.filter(
+    (filtered) => filtered.name ,filtered.surname 
+)
+
+
+
+// FILTER METODU https://ru.hexlet.io/qna/javascript/questions/kak-sdelat-filtry-js

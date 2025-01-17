@@ -1,5 +1,6 @@
 "use strict";
-
+const body = document.querySelector("body");
+const modeChanger = document.querySelector("#darkMode");
 const form = document.querySelector("#form");
 const getName = document.querySelector("#name");
 const getSurname = document.querySelector("#surname");
@@ -17,7 +18,9 @@ const getSearchBtn = document.querySelector("#search_btn");
 const getSearchResult = document.querySelector("#searchResult");
 
 // MASSIV FOR USERS 
-const users = [];
+// const users = [];
+// MASSIV FOR USERS (Retrieve from localStorage or initialize as empty array)
+let users = JSON.parse(localStorage.getItem("users")) || [];
 
 // DÜZGÜN VARİANT BUDUR FORM ƏLDƏ EDİLMƏLİDİR BÜTOV OLARAQ VE SONDA SIFIRLANMALIDIR
 
@@ -36,16 +39,6 @@ form.onsubmit = (event) => {
     // SEND ALL CREDETIALS FROM userData TO MASSIV users AND UPDATE THE TABLE
     users.push(userData);
     updateTable();
-
-    let result = 
-    `
-    New User added: <br> 
-    Name / Surname : ${userData.name} ${userData.surname} <br> 
-    E-mail : ${userData.email} <br> 
-    Contacts : ${userData.number} <br> 
-    Profession : ${userData.profession}
-    `
-    getResult.innerHTML = result;
 
     form.reset();
     getFileImg.src = "";
@@ -85,6 +78,22 @@ const updateTable = () => {
     })
 
 }
+
+// DARK MODE
+
+let modeSwitch = true;
+
+modeChanger.onclick = function () {
+    if (modeSwitch) {
+        body.style.backgroundColor = "#000";
+        body.style.color = "#fff"; // Меняем цвет текста на белый
+        modeSwitch = false; // Переключаем режим
+    } else {
+        body.style.backgroundColor = "#fff"; // Устанавливаем белый фон
+        body.style.color = "#000"; // Меняем цвет текста на черный
+        modeSwitch = true; // Переключаем режим
+    }
+};
 
 
 // BU VARİANT İŞƏ YARAYIR AMMA PEŞƏKAR METOD DEYİLDİR

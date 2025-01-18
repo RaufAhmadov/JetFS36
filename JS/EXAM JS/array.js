@@ -2,54 +2,176 @@
 
 
 
+
 // 2. Bir stringdə, həm kiçik, həm də böyük hərflərin neçə dəfə təkrarladığını tapın.
+
+// //////////////// METHOD 1
+
+// let text = "SaLaMWorLD";
+// let upCase = 0;
+// let lowCase = 0;
+// for(let i = 0;i < text.length; i++){
+//     if (text[i] === text[i].toUpperCase()) {
+//         upCase++
+//     }
+//     else{lowCase++}
+// }
+// document.write(`Boyuk herifin sayi ${upCase}` + "<br>" + `Kicik herfin sayi ${lowCase}`)
+
+// //////////////// METHOD 2
+
+// let text = "SaLaMWorLD";
+// let convert = text.split("");
+// let upCase = 0;
+// let lowCase = 0;
+// convert.forEach(element => {
+//     if(element === element.toUpperCase()){upCase++}
+//     else{lowCase++}
+// });
+// document.write(`Boyuk herifin sayi ${upCase}` + "<br>" + `Kicik herfin sayi ${lowCase}`);
+
+
+
 
 // 3. Bir array-dəki ən böyük iki ədədin cəm və hasilini tapın.
 
 
+
+
 // 4. Bir stringdəki bütün böyük hərflərin sayını tapın, ardıcıl olaraq hər hansı kiçik hərflər varsa, onları silin.
 
-// 5. Verilmiş massivdəki bütün elementlərin ortalamasını hesablayın.
+// let word = "Hello World!";
+// let upSymbol = 0;
+// for(let i = 0; i < word.length; i++){
+//     if (word[i] === word[i].toUpperCase() && /[A-Za-z]/.test(word[i])) {
+//         upSymbol++
+//     }
+//     else{continue;}
+// }
+// document.write(`UpperCase Symbols Count ${upSymbol}`);
 
+
+
+// 5. Verilmiş massivdəki bütün elementlərin ortalamasını hesablayın.
 // 6. Massivdəki elementlərin yerini qarışdırın (shuffle).
+
+
+
 
 // 7. Verilmiş ədədin ikili sistemdə (binary) yazılışını hesablayın. (internetde axtara bilersen,how to convert integer to binary number javascript)
 
+// function converter(num){
+//     let result = 0;
+//     if (num >= 0) {
+//         result = num.toString(2);
+//     }
+//     document.write(result);
+// }
+// let input = converter(5);
+
+
+
+
+
 // 8.Verilmiş ədədin faktorialını hesablayın.
+
 
 
 
 // 9. Üç qrup yoldaşının adlarından ibarət massiv yaradın; Başqa bir qrup yoldaşının adını massivin sonuna əlavə edin; 
 // İlk adı silin; Massivi konsola çıxarın.
 
+// let univer = [" Javanshir" , " Jahangir" , " Ismail"];
+// let input = "Rauf";
+// univer.unshift(input);
+// let result = univer.pop();
+// document.write(univer);
+
+
+
+
+
 // 10. Üç addan ibarət massiv yaradın. Massivin ikinci elementinin dəyərini “Classified” ilə əvəz edin. Massivi konsola çıxarın.
 
-// 11. Massiv verilib. "Episode 4: New Hope" kimi mesajları ardıcıl olaraq konsola çıxarın. Massiv elementlərin düzün.
-// let arr = ['New Hope', 'The Empire Strikes Back', 'Return of the Jdi'];
+// let agents = ["Jason Bourne", "Eathan Hunt", "James Bond"]
+// agents.splice(1,1,"Classified");
+// document.write(agents);
 
-// //Episode 4: New Hope
-// //Episode 5: Empire strikes back
-// //Episode 6: Return of the Jdi
+
+
+// 11. Massiv verilib. "StarWars Episode 4: New Hope" kimi mesajları ardıcıl olaraq konsola çıxarın. Massiv elementlərin düzün.
+
+// let arr = ['New Hope', 'The Empire Strikes Back', 'Return of the Jdi'];
+// arr.forEach((e , index) => {
+//     let result = `StarWars Episode: ${index + 1} ${e}` + "<br>";
+//     document.write(result);
+// })
+
+
+
 
 // 12.İstifadəçidən vergüllə ayrılmış beş ədədi daxil etməyi xahiş edin və onları massivdə saxlayın. 
 // İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massivə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
 
+// let num = [5,6,7,8,9];
+// let min = Math.min(... num);
+// document.write(min);
+
+
 // 13. Verilən mətn tip dəyərdəki vergülləri nöqtəli vergüllə əvəz edin. '32, 31, 34, 36, 31' mətni verilmişdir 
 // İçindəki vergülləri nöqtəli vergüllə əvəz edin.(Massivden istifadə ederek
 
+// let num = [32, 31, 34, 36, 31];
+// let result = num.join(",").replaceAll(",",";");
+// document.write(result);
+
+
 // 14. İki array verilib. Bu iki array-i birləşdirin və təkrarlanan elementləri aradan qaldırın.
+
+// let arrOne = ["HTML","CSS","JS","PHP"];
+// let arrTwo = ["C#","GoLang","JS","Python"];
+// arrOne.forEach(element => {
+//     if (arrTwo.includes(element)) {
+//         document.write(`Bu adlar her iki array-da movcuddur: ${element}<br>`);
+//     }
+// });
+
+
 
 // 15. İki array verilib. Bu iki array-dən yalnızca ilk array-də olub, ikinci array-də isə olmayan elementləri tapın.
 
-// 16. Tam ədədlər massivini qəbul edən, onu artan ardıcıllıqla sıralayan və sıralanmış massivi geri qaytaran 
-// sortArray() funksiyasını yazın.
+// let arrOne = ["HTML","CSS","JS","PHP"];
+// let arrTwo = ["C#","GoLang","JS","Python"];
+// arrOne.forEach(element => {
+//     let found = false;
+//     for(let i = 0;i < arrTwo.length; i++){
+//         if (arrTwo[i] === element) {
+//             found = true;
+//             break;
+//         }
+//     }
+//     if (!found) {
+//         document.write(`Bu ad her iki array-da movcud deyildir: ${element}<br>`);
+//     }
+//     else{document.write(`Bu ad her iki array-da movcuddur: ${element}<br>`);}
+// });
 
-// let array = [
-//   1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22,
-// ];
+
+
+
+
+// 16. Tam ədədlər massivini qəbul edən, onu artan ardıcıllıqla sıralayan və sıralanmış massivi geri qaytaran 
+// sortArray() funksiyasını yazın. " [1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22,] "
+
+// let array = [1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22,];
+// array.sort((a,b) => {return a-b;});
+// document.write(array);
+
+
+
 
 // 17.Rəqəmlər massivini parametr kimi qəbul edən və əgər həmin massivdə mənfi ədədlər varsa onları massiv şəklində geri qaytaran, 
-// yoxdursa uyğun mesajı geri funksiya yazın.
+// yoxdursa uyğun mesajı geri qaytaran funksiya yazın.
 
 
 

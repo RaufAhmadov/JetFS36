@@ -63,7 +63,7 @@ getFile.onchange = () => {
 // ADD USERS IN USER LIST
 
 const updateTable = (filteredUsers = users) => {
-    getTableBody.innerHTML = ""; // Очищаем содержимое таблицы
+    getTableBody.innerHTML = "";
     filteredUsers.forEach((user, index) => {
         getTableBody.innerHTML += 
         `<tr>

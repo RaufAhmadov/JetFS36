@@ -171,17 +171,21 @@
 
 
 // 17.Rəqəmlər massivini parametr kimi qəbul edən və əgər həmin massivdə mənfi ədədlər varsa onları massiv şəklində geri qaytaran, 
-// yoxdursa uyğun mesajı geri qaytaran funksiya yazın.
+// yoxdursa uyğun mesajı geri qaytaran funksiya yazın. 
+
+// BU TESTI ANLAMADIM!!!!!!!!
+
+
 
 
 
 // 18. Orijinal massivin elementlərindən ibarət yeni massiv yaradın.
-// Rəqəmlər massivi verilmişdir. Aşağıdakı qaydalarla dəyişdirilən orijinal massivin elementlərindən ibarət yeni massiv yaradın:
-
-// mənfi ədədlər müsbət olublar;
-// müsbət ədədlər ikiqat artırılıb.
+// Rəqəmlər massivi verilmişdir. Aşağıdakı qaydalarla dəyişdirilən orijinal massivin elementlərindən ibarət yeni massiv yaradın: mənfi ədədlər müsbət olublar; müsbət ədədlər ikiqat artırılıb.
 // Input:  [1, 5, -7, 3, -9, 4, -6, 2];
 // Output: [2, 10, 7, 6, 9, 8, 6, 4]
+
+
+
 
 // 19. Adlar massivi verilib. Bir funksiya yazın, hansı ki parametr olaraq massiv qəbul edir. Həmin massivdə "A" hərfi ilə başlayan 
 // elementlərdən ibarət yeni massiv yaradıb, elə bir dəyər tapılmasa uyğun mesajı geri qaytarmalıdır.

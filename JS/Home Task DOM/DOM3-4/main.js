@@ -16,6 +16,7 @@ const getTableBody = document.querySelector("#tableBody");
 const getSearch = document.querySelector("#search");
 const getSearchBtn = document.querySelector("#search_btn");
 const getSearchResult = document.querySelector("#searchResult");
+const professionFilter = document.querySelector("#profFilter select");
 
 // MASSIV FOR USERS 
 // const users = [];
@@ -61,23 +62,21 @@ getFile.onchange = () => {
 
 // ADD USERS IN USER LIST
 
-const updateTable = () => {
-    getTableBody.innerHTML = "";
-    users.forEach((user , index) => {
+const updateTable = (filteredUsers = users) => {
+    getTableBody.innerHTML = ""; // Очищаем содержимое таблицы
+    filteredUsers.forEach((user, index) => {
         getTableBody.innerHTML += 
         `<tr>
-            <td>1</td>
+            <td>${index + 1}</td>
             <td>${user.name}</td>
             <td>${user.surname}</td>
             <td>${user.email}</td>
             <td>${user.number}</td>
             <td>${user.profession}</td>
             <td><img src="${user.img}" alt="User Image" style="width: 50px; height: 50px;"></td>
-        </tr>
-        `;
-    })
-
-}
+        </tr>`;
+    });
+};
 
 // DARK MODE
 
@@ -86,14 +85,41 @@ let modeSwitch = true;
 modeChanger.onclick = function () {
     if (modeSwitch) {
         body.style.backgroundColor = "#000";
-        body.style.color = "#fff"; // Меняем цвет текста на белый
-        modeSwitch = false; // Переключаем режим
+        body.style.color = "#fff"; 
+        modeSwitch = false; 
     } else {
-        body.style.backgroundColor = "#fff"; // Устанавливаем белый фон
-        body.style.color = "#000"; // Меняем цвет текста на черный
-        modeSwitch = true; // Переключаем режим
+        body.style.backgroundColor = "#fff";
+        body.style.color = "#000"; 
+        modeSwitch = true; 
     }
 };
+
+
+// SEARCH
+
+getSearch.oninput = () => {
+    const searchValue = getSearch.value.toLowerCase();
+    const filteredUsers = users.filter(user =>
+        user.name.toLowerCase().includes(searchValue) ||
+        user.surname.toLowerCase().includes(searchValue) ||
+        user.email.toLowerCase().includes(searchValue) ||
+        user.profession.toLowerCase().includes(searchValue)
+    );
+
+    updateTable(filteredUsers);
+};
+
+
+// CATEGORY FILTER
+
+professionFilter.onchange = () => {
+    const selectedProfession = professionFilter.value;
+    const filteredUsers = users.filter(user => user.profession === selectedProfession);
+
+    updateTable(filteredUsers);
+};
+
+
 
 
 // BU VARİANT İŞƏ YARAYIR AMMA PEŞƏKAR METOD DEYİLDİR

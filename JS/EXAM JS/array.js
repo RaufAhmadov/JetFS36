@@ -172,12 +172,7 @@
 
 // 17.Rəqəmlər massivini parametr kimi qəbul edən və əgər həmin massivdə mənfi ədədlər varsa onları massiv şəklində geri qaytaran, 
 // yoxdursa uyğun mesajı geri qaytaran funksiya yazın. 
-
 // BU TESTI ANLAMADIM!!!!!!!!
-
-
-
-
 
 // 18. Orijinal massivin elementlərindən ibarət yeni massiv yaradın.
 // Rəqəmlər massivi verilmişdir. Aşağıdakı qaydalarla dəyişdirilən orijinal massivin elementlərindən ibarət yeni massiv yaradın: mənfi ədədlər müsbət olublar; müsbət ədədlər ikiqat artırılıb.
@@ -202,42 +197,203 @@
 //   "George",
 //   "Alex",
 // ];
+// let newNamesArray = [];
+// namesArray.forEach((e) =>{
+//     if (e[0] === "a" || e[0] === "A") {
+//         newNamesArray.push(e);
+//     }
+// })
+// document.write(newNamesArray.join("<br>"));
+
+
 
 
 // 20.Bir array-dəki hər bir ədədin 2 qatını alıb yeni bir array yaradın.
 
+// let numArr = [2, 10, 7, 6, 9, 8, 6, 4];
+// let newNumArr = [];
+// numArr.forEach((e) => {
+//     let result = e * 2;
+//     newNumArr.push(result);
+// });
+// document.write(newNumArr);
+
+
+
+
 // 21.Müəyyən bir ədədin array-də olub olmadığını yoxlayın.
+
+// let numArr = [2, 10, 7, 6, 9, 8, 6, 4];
+// let input = 2;
+// let found = false;
+// numArr.forEach(element => {
+//     if (element === input) {
+//         found = true;
+//     }
+// });
+// document.write(found);
+
+
+
  
 // 22.Array-dəki bütün müsbət ədədləri bir array-də toplayın.
 
+// let numArr = [2, 10, -7, -6, -9, 8, 6, 4];
+// let plus = [];
+// let minus = [];
+
+// numArr.forEach((e) => {
+//     if (e > 0) {
+//         plus.push(e);
+//     }
+//     else{minus.push(e)}
+// })
+// document.write("Array with PLUS numbers: " + plus + "<br>" + "Array with MINUS numbers: " + minus);
+
+
+
 // 23.Array-dəki ən kiçik ədədin hansı olduğunu tapın.
+// let numArr = [2, 10, -7, -6, -9, 8, 6, 4];
+// let minNum = Math.min(... numArr);
+// document.write(minNum);
+
+
+
 
 // 24.Array-dəki bütün ədədlərin cəmindən böyük olan bir ədəd tapın.
+// let numArr = [2, 10, -7, -6, -9, 8, 6, 4];
+// let minNum = Math.max(... numArr);
+// document.write(minNum);
+
+
+
+
 
 // 25.Bir array-dəki bütün ədədlərin kvadratını alıb yeni bir array yaradın.
 
+// let numArr = [2, 10, 7, 6, 9, 8, 6, 4];
+// let newArr = [];
+
+// numArr.forEach((e) => {
+//     let a = e * 2;
+//     newArr.push(a); 
+// })
+// document.write(newArr)
+
+
 // 26.Array-dəki heç olmasa bir ədədin 5-ə bölünməsini yoxlayın.
+
+// let numArr = [2, 10, 7, 6, 9, 8, 6, 4];
+// numArr.forEach((e) => {
+//     let a = e / 5;
+//     document.write(a + "<br>");
+// })
+
+
+
+
+
 
 // 27.Array-dəki bütün ədədlərin müsbət olduğunu yoxlayın.
 
+
+
+
+
+
+
 // 28.Array-dəki sözlərdən yalnız uzunluğu 5 və daha çox olanları seçin.
+
+// let wordArr = ["New", "Apple", "Friday", "Keys"];
+// let result = [];
+
+// for (let i = 0; i < wordArr.length; i++) {
+//     if (wordArr[i].length >= 5) {
+//         result.push(wordArr[i]);
+//     }
+// }
+// document.write(result.join("<br>"));
+
+
+
+
+
+
+
 
 // 29.Array-dəki ən böyük ədədin tapılmasını təmin edin.
 
+
+
+
+
+
+
+
+
 // 30.Array-dəki ən kiçik ədədin tapıldığı halda həmin ədədi silin.
+
+// let numArr = [2, 10, 7, 6, 9, 8, 6, 4];
+// let minNum = Math.min(... numArr);
+// let minNumIndex = numArr.indexOf(minNum);
+// numArr.splice(minNumIndex, 1);
+// document.write("Updated Array: " + numArr.join(", ") + "<br>" + "Deleted number: " + minNum);
+
+
+
 
 // 31.Array-də "JavaScript" sözünü tapın və tapıldıqda həmin sözün yerini dəyişdirin.
 
+// let wordArr = ["New", "Apple", "Friday", "Keys" , "JavaScript"];
+// let found = wordArr.indexOf("JavaScript");
+//     if (found !== -1) {
+//         let removed = wordArr.splice(found, 1);
+//         wordArr.unshift(removed[0]);
+//     }
+// document.write(wordArr.join(", "));
+
+
+
 // 32.Array-dəki bütün adları kiçik hərflərlə yazın.
+
+// let wordArr = ["New", "Apple", "Friday", "Keys" , "JavaScript"];
+// let result = wordArr.map((e) => e.toLowerCase());
+// document.write(result.join(", "));
+
+
 
 // 33.Bir array-də olan hər bir elementin 3 ilə vurulmuş formasını yaradın.
 
+// let numArr = [2, 10, 7, 6, 9, 8, 6, 4];
+// let double = numArr.map((num) => num * 2);
+// document.write(double)
+
+
 // 34.Array-dəki cüt ədədləri filtrləyin və yeni bir array yaradın.
+
+// let numArr = [12, 10, 27, 66, 999, 8, 6, 4];
+// let newArr = [];
+
+// numArr.forEach((num) => {
+//     if (num >= 10 && num <= 99) {
+//         newArr.push(num)
+//     }
+// });
+// document.write(newArr);
+
+
+
 
 // 35.Array-dəki sözlərin uzunluğuna əsasən onları artan sıraya düzün.
 
 // 36.Array-də ən azı bir ədədin 3-ə bölünən olub olmadığını yoxlayın.
 
+
+
+
 // 37.Array-dəki bütün elementlərin tərsini qaytarın.
+
+
+
 
 // 38.Array-dəki müəyyən bir sözü tapın və o sözü dəyişdirin.

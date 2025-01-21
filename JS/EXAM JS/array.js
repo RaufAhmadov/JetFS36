@@ -383,17 +383,7 @@
 
 
 
-
 // 35.Array-dəki sözlərin uzunluğuna əsasən onları artan sıraya düzün.
-
 // 36.Array-də ən azı bir ədədin 3-ə bölünən olub olmadığını yoxlayın.
-
-
-
-
 // 37.Array-dəki bütün elementlərin tərsini qaytarın.
-
-
-
-
 // 38.Array-dəki müəyyən bir sözü tapın və o sözü dəyişdirin.

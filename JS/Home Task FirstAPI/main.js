@@ -77,30 +77,30 @@
 
 // TASK 3
 
-const connect = "https://jsonplaceholder.typicode.com/posts";
-const getList = document.querySelector("#list");
-const btn = document.querySelector("#btn");
+// const connect = "https://jsonplaceholder.typicode.com/posts";
+// const getList = document.querySelector("#list");
+// const btn = document.querySelector("#btn");
 
-btn.addEventListener("click" , () => {
+// btn.addEventListener("click" , () => {
     
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", connect);
-    xhr.send();
+//     const xhr = new XMLHttpRequest();
+//     xhr.open("GET", connect);
+//     xhr.send();
 
-    xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4) {
-            const a = JSON.parse(xhr.response);
-            a.forEach(event => {
-                getList.innerHTML += `
-                    <div class="info">
-                        <p>UserID : ${event.userId}</p>
-                        <p>ID : ${event.id}</p>
-                        <p>Title : ${event.title}</p>
-                        <p>Body : ${event.body}</p>
-                    </div>
-                `
-            });
-        }
-    }
-});
+//     xhr.onreadystatechange = () => {
+//         if (xhr.readyState === 4) {
+//             const a = JSON.parse(xhr.response);
+//             a.forEach(event => {
+//                 getList.innerHTML += `
+//                     <div class="info">
+//                         <p>UserID : ${event.userId}</p>
+//                         <p>ID : ${event.id}</p>
+//                         <p>Title : ${event.title}</p>
+//                         <p>Body : ${event.body}</p>
+//                     </div>
+//                 `
+//             });
+//         }
+//     }
+// });
 

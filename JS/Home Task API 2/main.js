@@ -1,32 +1,25 @@
-"use strict"
+"use strict";
 
 const getMain = document.querySelector("#main");
 
 const connect = "https://fakestoreapi.com/products";
 axios.get(connect).then(response => { 
-    response.data.forEach(element => {
-        getMain.innerHTML +=`
-        <div class="list">
-            <div class="api_img">
-                <img src="${element.image}" alt="${element.title}"">
+    if (response.status === 200) {
+        response.data.forEach(element => {
+            getMain.innerHTML += `
+            <div class="list">
+                <div class="api_img">
+                    <img src="${element.image}" alt="${element.title}">
+                </div>
+                <div class="api_cat_info">
+                    <a class="api_id">ID: ${element.id}</a>
+                    <a href="./category.html?category=${element.category}" class="api_category">Category: ${element.category}</a>
+                </div>
             </div>
-            <div class="api_cat_info">
-                <a class="api_id">ID : ${element.id}</a>
-                <a class="api_category">Category: ${element.category}</a>
-            </div>
-        </div>
-        
-        `;
-    });
+            `;
+        });
+    }
 });
-
-// const open = () => {
-//     list.addEventListener("click", () => {
-        
-//     });
-// };
-
-// open();
 
 
 

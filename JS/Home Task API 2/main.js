@@ -1,25 +1,83 @@
 "use strict";
 
-const getMain = document.querySelector("#main");
+const getIndexPageMain = document.querySelector("#main");
+const connect = "https://dummyjson.com/products";
 
-const connect = "https://fakestoreapi.com/products";
-axios.get(connect).then(response => { 
+axios.get(connect).then(response => {
+    console.log(response);
     if (response.status === 200) {
-        response.data.forEach(element => {
-            getMain.innerHTML += `
-            <div class="list">
-                <div class="api_img">
-                    <img src="${element.image}" alt="${element.title}">
+        response.data.products.forEach(({
+            availabilityStatus, brand, category, description, dimensions, discountPercentage, id , images, 
+            minimumOrderQuantity, price, rating,  returnPolicy, review, shippingInformation, sku, stock, 
+            tags, title, warantyInformation, weight
+        }) => {
+            getIndexPageMain.innerHTML +=`
+            <div class="main_list">
+                <div class="goods_img">
+                    <img src="${images[0]}" alt="${title}">
                 </div>
-                <div class="api_cat_info">
-                    <a class="api_id">ID: ${element.id}</a>
-                    <a href="./category.html?category=${element.category}" class="api_category">Category: ${element.category}</a>
+                <div class="goods_info">
+                    ${brand ? `<p class="goods_brand">${brand}</p>` : ""}
+                    <p class="goods_cat">Category: ${category}</p>
+                    <p class="goods_disc">Discount: ${discountPercentage}%</p>
+                    <p class="goods_rating">Rating: ${rating}</p>
                 </div>
             </div>
             `;
         });
+        const onklik = () =>{
+            document.querySelectorAll(".main_list").forEach(element => {
+                element.addEventListener("click", () => {
+                    console.log("ok"); 
+                    // IKINCI SEHFEYE KECID BURADA
+                });
+            });
+        };
+        onklik();
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const getMain = document.querySelector("#main");
+
+// const connect = "https://fakestoreapi.com/products";
+// axios.get(connect).then(response => { 
+//     if (response.status === 200) {
+//         response.data.forEach(element => {
+//             getMain.innerHTML += `
+//             <div class="list">
+//                 <div class="api_img">
+//                     <img src="${element.image}" alt="${element.title}">
+//                 </div>
+//                 <div class="api_cat_info">
+//                     <a class="api_id">ID: ${element.id}</a>
+//                     <a href="./category.html?category=${element.category}" class="api_category">Category: ${element.category}</a>
+//                 </div>
+//             </div>
+//             `;
+//         });
+//     }
+// });
 
 
 

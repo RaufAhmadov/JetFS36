@@ -1,10 +1,11 @@
+// import axios from 'axios';
 "use strict";
+
 
 const getIndexPageMain = document.querySelector("#main");
 const connect = "https://dummyjson.com/products";
 
 axios.get(connect).then(response => {
-    console.log(response);
     if (response.status === 200) {
         response.data.products.forEach(({
             availabilityStatus, brand, category, description, dimensions, discountPercentage, id , images, 
@@ -12,31 +13,37 @@ axios.get(connect).then(response => {
             tags, title, warantyInformation, weight
         }) => {
             getIndexPageMain.innerHTML +=`
+            <a href="./category.html?item=${id}">
             <div class="main_list">
                 <div class="goods_img">
                     <img src="${images[0]}" alt="${title}">
                 </div>
                 <div class="goods_info">
-                    ${brand ? `<p class="goods_brand">${brand}</p>` : ""}
+                    ${brand ? `<p class="goods_brand">${brand}</p>` : `<p class="goods_brand">Foods</p>`}
                     <p class="goods_cat">Category: ${category}</p>
                     <p class="goods_disc">Discount: ${discountPercentage}%</p>
                     <p class="goods_rating">Rating: ${rating}</p>
                 </div>
             </div>
+            </a>
+
             `;
         });
-        const onklik = () =>{
-            document.querySelectorAll(".main_list").forEach(element => {
-                element.addEventListener("click", () => {
-                    console.log("ok"); 
-                    // IKINCI SEHFEYE KECID BURADA
-                });
-            });
-        };
-        onklik();
     }
 });
 
+
+
+
+// const onklik = () =>{
+//     document.querySelectorAll(".main_list").forEach(element => {
+//         element.addEventListener("click", () => {
+//             console.log("ok"); 
+//             // IKINCI SEHFEYE KECID BURADA
+//         });
+//     });
+// };
+// onklik();
 
 
 

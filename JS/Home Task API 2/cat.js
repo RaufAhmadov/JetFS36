@@ -1,44 +1,53 @@
 "use strict";
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const category = urlParams.get("category");
+const urlParams = new URLSearchParams(window.location.search);
+const itemID = urlParams.get("item");  // Получаем item ID из URL
 
-// const moreInfo = document.querySelector("#moreInfo");
-// const catMain = document.querySelector("#cat_main");
+const mainInfo = document.querySelector("#moreInfo");
+const catMain = document.querySelector("#cat_main");
+mainInfo.innerHTML = `Item ID: ${itemID} Detail info`;
 
-// if (category) {
-//     moreInfo.innerHTML = `Category: ${category}`;
-// } else {
-//     moreInfo.innerHTML = "Category not found";
-// }
+const connect = "https://dummyjson.com/products";
 
-// const connect = "https://fakestoreapi.com/products";
-// axios.get(connect).then(response => {
-//     const filteredProducts = response.data.filter(item => item.category === category);
+axios.get(connect).then(response => {
+    if (response.status === 200) {
+        const product = response.data.products.find(product => product.id === parseInt(itemID));  // Фильтруем по ID товара
+        if (product) {
+            const {
+                availabilityStatus, brand, category, description, dimensions, discountPercentage, id, images, 
+                minimumOrderQuantity, price, rating, returnPolicy, review, shippingInformation, sku, stock, 
+                tags, title, warrantyInformation, weight
+            } = product;
 
-//     if (filteredProducts.length > 0) {
-//         filteredProducts.forEach(product => {
-//             catMain.innerHTML += `
-//             <div class="goods_list">
-//                 <div class="goods_img">
-//                     <img src="${product.image}" alt="${product.title}">
-//                 </div>
-//                 <div class="goods_info">
-//                     <p class="goods_title">Title: ${product.title}</p>
-//                     <p class="goods_price">Price: $${product.price}</p>
-//                     <ul>
-//                         <li class="goods_rait">Rating: ${product.rating.rate}</li>
-//                         <li class="goods_count">Count: ${product.rating.count}</li>
-//                     </ul>
-//                     <p class="goods_desc">Description: ${product.description}</p>
-//                 </div>
-//             </div>
-//             `;
-//         });
-//     } else {
-//         catMain.innerHTML = "<p>No products found in this category.</p>";
-//     }
-// }).catch(error => {
-//     console.error("Error fetching data:", error);
-//     catMain.innerHTML = "<p>Failed to load products.</p>";
-// });
+            catMain.innerHTML = `
+                <div class="about_category">
+                    <div class="category_img"><img src="${images[0]}" titles="${title}"></div>
+                </div>
+                <div class="category_info">
+                    <p>Title: ${title}</p>
+                    <p>Brand: ${brand}</p>
+                    <p>Category: ${category}</p>
+                    <p>Price: $${price}</p>
+                    <p>Discount: ${discountPercentage}%</p>
+                    <p>Rating: ${rating}</p>
+                    <p>Availability: ${availabilityStatus}</p>
+                    <p>Min Order: ${minimumOrderQuantity}</p>
+                    <ul>Dimensions:
+                    <li>Depth: ${dimensions.depth}</li>
+                    <li>Height: ${dimensions.height}</li>
+                    <li>Width: ${dimensions.width}</li>
+                    </ul>
+                    <p>${returnPolicy}</p>
+                    <p>Tags: ${tags}</p>
+                    <p>${shippingInformation}</p>
+                    <p>SKU: ${sku}</p>
+                    <p>Stock: ${stock}</p>
+                    <p>${warrantyInformation}</p>
+                    <p>Weight: ${weight}</p>
+                    <p>Description: ${description}</p>
+                </div>
+            `;
+        }
+    }
+});
+

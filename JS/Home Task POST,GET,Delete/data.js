@@ -1,0 +1,55 @@
+"use strict"
+
+
+const array = [
+    {
+        "id": "",
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "country": "Azerbaijan" ,
+        "address": "Light str 123" ,
+        "phone": "1-770-736-8031",
+        "website": "hildegard.org",
+    },
+    {
+        "id": "",
+        "name": "Ervin Howell",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv",
+        "country": "Azerbaijan" ,
+        "address": "Light str 123" ,
+        "phone": "1-770-736-8031",
+        "website": "hildegard.org",
+    },
+    {
+        "id": "",
+        "name": "Clementine Bauch",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net",
+        "country": "Azerbaijan" ,
+        "address": "Light str 123" ,
+        "phone": "1-770-736-8031",
+        "website": "hildegard.org",
+    },
+    {
+        "id": "",
+        "name": "Patricia Lebsack",
+        "username": "Karianne",
+        "email": "Julianne.OConner@kory.org",
+        "country": "Azerbaijan" ,
+        "address": "Light str 123" ,
+        "phone": "1-770-736-8031",
+        "website": "hildegard.org",
+    },
+    {
+        "id": "",
+        "name": "Chelsey Dietrich",
+        "username": "Kamren",
+        "email": "Lucio_Hettinger@annie.ca",
+        "country": "Azerbaijan" ,
+        "address": "Light str 123" ,
+        "phone": "1-770-736-8031",
+        "website": "hildegard.org",
+    },
+];

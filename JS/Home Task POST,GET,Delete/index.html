@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task JS POST GET Delete</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div><h1 class="head_name">Facebook</h1></div>
+        <div><button id="darkMode">Dark / Light</button></div>
+    </header>
+    <main>
+        <div class="formArea">
+            <div>
+                <form action="#" id="searchInp" class="form">
+                    <input type="search" name="" id="search" class="search">
+                    <input type="submit" value="Search" id="search_btn" class="search_btn">
+                </form>
+            </div>
+            <div>
+                <form action="#" id="form" class="form">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="text"  placeholder="Surname" id="surname">
+                    <input type="email" placeholder="E-mail" id="email">
+                    <input type="text" placeholder="Contact" id="number" maxlength="10">
+                    <select name="" id="profession">
+                        <option value="programmer" selected>Programmer</option>
+                        <option value="accountant">Accountant</option>
+                        <option value="engineer">Engineer</option>
+                    </select>
+                    <input type="submit" value="Add" id="submit">
+                </form>
+            </div>
+        </div>
+        <!-- <div class="showResult">
+            <div id="result" class="resultOff"></div>
+            <div id="searchResult"></div>
+        </div> -->
+        <img src="" alt="" id="preview" class="preview">
+        <div id="profFilter" class="profFilter">
+            <p>Users profession filter</p>
+            <form action="">
+                <select name="" id="">
+                    <option value="programmer" selected>Programmer</option>
+                    <option value="accountant">Accountant</option>
+                    <option value="engineer">Engineer</option>
+                </select>
+            </form>   
+        </div>
+        <table id="table">
+            <caption>Registered Users</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Contacts</th>
+                    <th>Profession</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>
+    <script src="./main.js"></script>
+</body>
+</html>

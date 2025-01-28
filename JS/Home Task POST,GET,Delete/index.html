@@ -25,48 +25,45 @@
                     <input type="text"  placeholder="Surname" id="surname">
                     <input type="email" placeholder="E-mail" id="email">
                     <input type="text" placeholder="Contact" id="number" maxlength="10">
-                    <select name="" id="profession">
-                        <option value="programmer" selected>Programmer</option>
-                        <option value="accountant">Accountant</option>
-                        <option value="engineer">Engineer</option>
+                    <input type="text" placeholder="Address" id="address">
+                    <input type="text" placeholder="Website" id="website">
+                    <select name="" id="country">
+                        <option value="azerbaijan">Azerbaijan</option>
+                        <option value="russia">Russia</option>
+                        <option value="usa">USA</option>
                     </select>
                     <input type="submit" value="Add" id="submit">
                 </form>
             </div>
         </div>
-        <!-- <div class="showResult">
-            <div id="result" class="resultOff"></div>
-            <div id="searchResult"></div>
-        </div> -->
-        <img src="" alt="" id="preview" class="preview">
-        <div id="profFilter" class="profFilter">
-            <p>Users profession filter</p>
+        <div id="categoryFilter" class="profFilter">
+            <p>Coutry Filter</p>
             <form action="">
-                <select name="" id="">
-                    <option value="programmer" selected>Programmer</option>
-                    <option value="accountant">Accountant</option>
-                    <option value="engineer">Engineer</option>
-                </select>
+                <select name="" id="countryFilter"></select>
             </form>   
         </div>
-        <table id="table">
-            <caption>Registered Users</caption>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Email</th>
-                    <th>Contacts</th>
-                    <th>Profession</th>
-                    <th>Photo</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-            </tbody>
-        </table>
+        <div id="showUsers" class="showUsers">
+            <table id="user_table">
+                <caption>Registered Users</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Website</th>
+                        <th> Action</th>
+                    </tr>
+                </thead>
+                <tbody id="user_list">
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer></footer>
-    <script src="./main.js"></script>
+    <script src="./data.js"></script>
 </body>
 </html>

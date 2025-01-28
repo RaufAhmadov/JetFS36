@@ -9,9 +9,26 @@ a{
     text-decoration: none;
 }
 
-button{
+button, .edit_btn, .del_btn{
     cursor: pointer;
+    border: none;
 }
+
+.edit_btn{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.del_btn{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
 
 input[type="submit"] {
     cursor: pointer;

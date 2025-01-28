@@ -9,23 +9,24 @@ a{
     text-decoration: none;
 }
 
-button, .edit_btn, .del_btn{
+button, .edit_btn, .del_btn, .det_btn{
     cursor: pointer;
     border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .edit_btn{
     background-color: green;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px
 }
 
 .del_btn{
     background-color: red;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+}
+
+.det_btn{
+    background-color: #ffc801;
 }
 
 

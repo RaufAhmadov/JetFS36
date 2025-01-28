@@ -35,7 +35,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-header{
+.index_head{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,4 +204,69 @@ caption {
 
 .light{
     background-color: #fff;
+}
+
+
+
+
+
+/* DETAILS PAGE */
+
+
+.details_head{
+    background-color: #0984e3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.back_link{
+
+}
+
+.back_link a{
+    display: inline-block;
+    color: yellowgreen;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.back_link a:hover{
+    color: #FFD301;
+}
+
+.userDetailsImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.userDetailsImg img{
+    width: 150px;
+    height: 150px;
+}
+
+.userDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.userDetails p{
+    text-align: left;
+    color: #222f3e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.details_main{
+    background: #ff6b6b;
+    margin: 10px;
+    border-radius: 10px;
 }

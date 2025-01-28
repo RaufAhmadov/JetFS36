@@ -1,57 +1,58 @@
 {
-
-    "usersList":[
-        {
-            "id": "1",
-            "name": "Leanne",
-            "surname": "Bret",
-            "email": "Sincere@april.biz",
-            "country": "Azerbaijan" ,
-            "address": "Light str 123" ,
-            "contact": "1-770-736-8031",
-            "website": "hildegard.org"
-        },
-        {
-            "id": "2",
-            "name": "Ervin",
-            "surname": "Howell",
-            "email": "Shanna@melissa.tv",
-            "country": "Azerbaijan" ,
-            "address": "Light str 123" ,
-            "contact": "1-770-736-8031",
-            "website": "hildegard.org"
-        },
-        {
-            "id": "3",
-            "name": "Clementine",
-            "surname": "Bauch",
-            "email": "Nathan@yesenia.net",
-            "country": "Azerbaijan" ,
-            "address": "Light str 123" ,
-            "contact": "1-770-736-8031",
-            "website": "hildegard.org"
-        },
-        {
-            "id": "4",
-            "name": "Patricia",
-            "surname": "Lebsack",
-            "email": "Julianne.OConner@kory.org",
-            "country": "Azerbaijan" ,
-            "address": "Light str 123" ,
-            "contact": "1-770-736-8031",
-            "website": "hildegard.org"
-        },
-        {
-            "id": "5",
-            "name": "Chelsey",
-            "surname": "Dietrich",
-            "email": "Lucio_Hettinger@annie.ca",
-            "country": "Azerbaijan" ,
-            "address": "Light str 123" ,
-            "contact": "1-770-736-8031",
-            "website": "hildegard.org"
-        }
-    ],
-    "countryCategory":["All", "Azerbaijan", "Russian", "USA"]
-
+  "usersList": [
+    {
+      "id": "3",
+      "name": "John",
+      "surname": "Bauch",
+      "email": "Nathan@yesenia.net",
+      "country": "Azerbaijan",
+      "address": "Light str 123",
+      "contact": "1-770-736-8031",
+      "website": "hildegard.org"
+    },
+    {
+      "id": "4",
+      "name": "Patricia",
+      "surname": "Lebsack",
+      "email": "Julianne.OConner@kory.org",
+      "country": "Azerbaijan",
+      "address": "Light str 123",
+      "contact": "1-770-736-8031",
+      "website": "hildegard.org"
+    },
+    {
+      "id": "5",
+      "name": "Chelsey",
+      "surname": "Dietrich",
+      "email": "Lucio_Hettinger@annie.ca",
+      "country": "Azerbaijan",
+      "address": "Light str 123",
+      "contact": "1-770-736-8031",
+      "website": "hildegard.org"
+    },
+    {
+      "id": "51be",
+      "name": "Rauf",
+      "surname": "Ahmadov",
+      "email": "rauf@gmail.com",
+      "country": "USA",
+      "address": "Baku 71A",
+      "contact": "99966677",
+      "website": "raufahmadov.az"
+    }
+  ],
+  "countryCategory": [
+    {
+      "name": "All"
+    },
+    {
+      "name": "Azerbaijan"
+    },
+    {
+      "name": "Russian"
+    },
+    {
+      "name": "USA"
+    }
+  ]
 }

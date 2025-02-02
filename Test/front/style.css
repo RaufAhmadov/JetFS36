@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.guller{
+    gap: 20px;
+    display: grid;
+    margin: auto;
+    max-width: 1200px;
+    grid-template-columns: repeat(4 , 1fr);
+    padding: 20px;
+}
+
+.gul{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.container button:hover{
+    background-color: grey;
+}
+
+
+.remove_btn{
+    padding: 5px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.edit_btn{
+    padding: 5px;
+    margin: 5px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.remove_btn:hover{
+    background-color: rgb(216, 49, 49);
+}
+.edit_btn:hover{
+    background-color: rgb(130, 175, 39);
+}
+
+
+.form{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+form input,form select{
+    padding: 5px;
+    border-radius: 5px;
+}
+

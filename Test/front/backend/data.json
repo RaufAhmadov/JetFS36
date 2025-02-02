@@ -1,0 +1,52 @@
+{
+  "flowers": [
+    {
+      "id": "1",
+      "ad": "Qizil Gul",
+      "reng": "Beyaz",
+      "qiymet": 15,
+      "kateqoriya": "Dekorativ"
+    },
+    {
+      "id": "2",
+      "ad": "Benovshe",
+      "reng": "Benovsheyi",
+      "qiymet": 8,
+      "kateqoriya": "Dekorativ"
+    },
+    {
+      "id": "3",
+      "ad": "Lale",
+      "reng": "Sari",
+      "qiymet": 20,
+      "kateqoriya": "Bahar Gulleri"
+    },
+    {
+      "id": "4",
+      "ad": "Nergiz",
+      "reng": "Ag",
+      "qiymet": 17,
+      "kateqoriya": "Bahar Gulleri"
+    },
+    {
+      "id": "5",
+      "ad": "Alp Gulu",
+      "reng": "Mavi",
+      "qiymet": 35,
+      "kateqoriya": "Bag Gulleri"
+    },
+    {
+      "id": "aa3c",
+      "ad": "Roza",
+      "qiymet": "5",
+      "reng": "Qirmizi",
+      "kateqoriya": "Bag Gulleri"
+    }
+  ],
+  "categories": [
+    "Hamisi",
+    "Dekorativ",
+    "Bahar Gulleri",
+    "Bag Gulleri"
+  ]
+}
